@@ -1,11 +1,13 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useModal } from '@/lib/modal-context'
 
 export default function Modal() {
   const { open, closeModal } = useModal()
   const [submitted, setSubmitted] = useState(false)
   const [name, setName] = useState('')
+  const router = useRouter()
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') closeModal() }
@@ -30,12 +32,12 @@ export default function Modal() {
     if (!n || !p) { alert('Please provide your name and phone number.'); return }
     setName(n)
     setSubmitted(true)
-    setTimeout(closeModal, 2500)
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: n, phone: p, email: em, interest, source: 'Halo by Raghava Website' }),
     }).catch(() => {})
+    setTimeout(() => { closeModal(); router.push('/thank-you') }, 400)
   }
 
   if (!open) return null

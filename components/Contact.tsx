@@ -1,11 +1,13 @@
 'use client'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useModal } from '@/lib/modal-context'
 
 export default function Contact() {
   const { openModal } = useModal()
   const [submitted, setSubmitted] = useState(false)
   const [submittedName, setSubmittedName] = useState('')
+  const router = useRouter()
 
   const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/iKV2RlHEQss3Ai83mwnU/webhook-trigger/Yq3KogRk8uZlWNNpuiV5'
 
@@ -24,6 +26,7 @@ export default function Contact() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, phone, email, interest, source: 'Halo by Raghava Website' }),
     }).catch(() => {})
+    setTimeout(() => router.push('/thank-you'), 400)
   }
 
   return (
