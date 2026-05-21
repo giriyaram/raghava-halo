@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Blog & Insights | Halo by Raghava',
   description:
     'Practical guides on buying premium apartments in Kondapur, Hyderabad — high-rise living, vastu, financial district proximity, and what to look for in a new launch project.',
-  alternates: { canonical: 'https://halobyraghava.com/blog' },
+  alternates: { canonical: 'https://raghavakondapur.com/blog' },
 }
 
 export default function BlogPage() {

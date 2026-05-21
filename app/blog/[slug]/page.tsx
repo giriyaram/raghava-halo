@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: 'article',
       publishedTime: post.date,
-      url: `https://halobyraghava.com/blog/${post.slug}`,
+      url: `https://raghavakondapur.com/blog/${post.slug}`,
     },
-    alternates: { canonical: `https://halobyraghava.com/blog/${post.slug}` },
+    alternates: { canonical: `https://raghavakondapur.com/blog/${post.slug}` },
   }
 }
 
@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: post.date,
     author: { '@type': 'Organization', name: 'Raghava Group' },
-    publisher: { '@type': 'Organization', name: 'Halo by Raghava', url: 'https://halobyraghava.com' },
+    publisher: { '@type': 'Organization', name: 'Halo by Raghava', url: 'https://raghavakondapur.com' },
     keywords: post.tags.join(', '),
   }
 

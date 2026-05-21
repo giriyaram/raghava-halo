@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Privacy Policy | Halo by Raghava',
   description: 'Privacy Policy for Halo by Raghava — how we collect, use, and protect your personal information.',
-  alternates: { canonical: 'https://halobyraghava.com/privacy-policy' },
+  alternates: { canonical: 'https://raghavakondapur.com/privacy-policy' },
   robots: { index: false, follow: false },
 }
 
