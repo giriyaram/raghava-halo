@@ -67,7 +67,7 @@ const jsonLd = {
       '@id': 'https://raghavakondapur.com/#organization',
       name: 'Raghava Group',
       url: 'https://raghavakondapur.com',
-      logo: 'https://raghavakondapur.com/images/logo.png',
+      logo: 'https://raghavakondapur.com/images/raghava-logo.jpg',
       description: 'Raghava Group is a Hyderabad-based real estate developer known for premium residential projects.',
       contactPoint: {
         '@type': 'ContactPoint',
