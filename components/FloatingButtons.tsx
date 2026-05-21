@@ -7,7 +7,7 @@ export default function FloatingButtons() {
     <>
       <a
         id="float-whatsapp"
-        href="https://wa.me/919999999999?text=Hi%2C+I'm+interested+in+Halo+by+Raghava+in+Kondapur."
+        href="https://wa.me/919849019238?text=Hi%2C+I'm+interested+in+Halo+by+Raghava+in+Kondapur."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contact Halo on WhatsApp"

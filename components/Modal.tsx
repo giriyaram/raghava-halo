@@ -96,7 +96,7 @@ export default function Modal() {
               <p className="form-trust">No spam. No pressure calls. Your information stays private.</p>
             </form>
             <a
-              href="https://wa.me/919999999999?text=Hi%2C+I'm+interested+in+Halo+by+Raghava+in+Kondapur."
+              href="https://wa.me/919849019238?text=Hi%2C+I'm+interested+in+Halo+by+Raghava+in+Kondapur."
               className="whatsapp-alt"
               target="_blank"
               rel="noopener noreferrer"
