@@ -41,11 +41,12 @@ We will not use your information for any purpose unrelated to Halo by Raghava wi
 
 Your information may be shared with:
 
-- **Raghava Group's authorised sales team** — internal staff who handle enquiry follow-ups and site visits.
+- **Realvision Reality Consultancy's sales team** — our authorised consultants who handle enquiry follow-ups and site visits.
+- **Raghava Group (the developer)** — as the project developer, they may receive your enquiry details to coordinate site visits, pricing, and possession-related communications.
 - **CRM and communication platforms** — we use GoHighLevel (GHL), a customer relationship management platform, to manage enquiries and communications. Your data is stored securely on their platform subject to their privacy policies.
 - **Legal requirements** — if required by law, regulation, or court order, we may disclose your information to the appropriate authorities.
 
-We do not share your data with any third-party brokers, marketing agencies, or unrelated businesses.`,
+We do not share your data with any unrelated third-party brokers, marketing agencies, or businesses outside the scope of this project.`,
   },
   {
     title: '4. WhatsApp & SMS Communication',
@@ -100,12 +101,13 @@ To exercise any of these rights, please contact us at the details provided below
     title: '13. Contact Us',
     content: `If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:
 
-**Raghava Group**
-Halo by Raghava, Kondapur, Hyderabad, Telangana
+**Realvision Reality Consultancy**
+Authorised Channel Partner — Halo by Raghava
+Hyderabad, Telangana
 📞 +91 98490 19238
 📧 info@halobyraghava.com
 
-You may also write to us via WhatsApp at the number above.`,
+You may also reach us via WhatsApp at the number above.`,
   },
 ]
 
@@ -155,7 +157,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9375rem' }}>
-            Effective date: June 1, 2025 &nbsp;·&nbsp; Halo by Raghava, Kondapur, Hyderabad
+            Effective date: June 1, 2025 &nbsp;·&nbsp; Realvision Reality Consultancy, Hyderabad
           </p>
         </div>
       </header>
@@ -175,8 +177,9 @@ export default function PrivacyPolicyPage() {
             lineHeight: 1.8,
             color: 'var(--text)',
           }}>
-            Raghava Group (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the website for Halo by Raghava
-            (&ldquo;the Project&rdquo;). This Privacy Policy explains how we collect, use, store, and
+            Realvision Reality Consultancy (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) is an authorised channel
+            partner firm operating this website on behalf of Halo by Raghava (&ldquo;the Project&rdquo;),
+            developed by Raghava Group. This Privacy Policy explains how we collect, use, store, and
             protect the personal information you provide when enquiring about the project through
             this website. By submitting an enquiry, you agree to the terms of this policy.
           </div>
