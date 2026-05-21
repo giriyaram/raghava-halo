@@ -18,15 +18,24 @@ export default function Modal() {
     return () => { document.body.style.overflow = '' }
   }, [open])
 
+  const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/iKV2RlHEQss3Ai83mwnU/webhook-trigger/Yq3KogRk8uZlWNNpuiV5'
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
     const n = (form.elements.namedItem('name') as HTMLInputElement).value.trim()
     const p = (form.elements.namedItem('phone') as HTMLInputElement).value.trim()
+    const em = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
+    const interest = (form.elements.namedItem('interest') as HTMLSelectElement).value
     if (!n || !p) { alert('Please provide your name and phone number.'); return }
     setName(n)
     setSubmitted(true)
     setTimeout(closeModal, 2500)
+    fetch(GHL_WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: n, phone: p, email: em, interest, source: 'Halo by Raghava Website' }),
+    }).catch(() => {})
   }
 
   if (!open) return null
@@ -79,17 +88,6 @@ export default function Modal() {
                   <option>3 BHK Premium (~2100 sft)</option>
                   <option>Tower 3 Corner 3 BHK (~2500 sft)</option>
                   <option>Not Sure Yet — Show Me All Options</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label htmlFor="m-source">How did you hear about Halo?</label>
-                <select id="m-source" name="source">
-                  <option value="">Select</option>
-                  <option>Google Search</option>
-                  <option>Friend or Family</option>
-                  <option>Social Media</option>
-                  <option>Site Hoarding / Outdoor Ad</option>
-                  <option>Other</option>
                 </select>
               </div>
               <button type="submit" className="form-submit">Send My Enquiry</button>
