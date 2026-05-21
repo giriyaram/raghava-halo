@@ -377,24 +377,30 @@
   /* ── TRUST BAR ── */
   #trust-bar {
     background: var(--dark);
-    padding: 20px 24px;
+    padding: 0;
   }
   .trust-bar-inner {
-    display: flex; flex-wrap: wrap; gap: 0;
+    display: flex; flex-wrap: nowrap; gap: 0;
     max-width: var(--max-w); margin: 0 auto;
     justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 8px;
   }
+  .trust-bar-inner::-webkit-scrollbar { display: none; }
   .trust-item {
     display: flex; align-items: center; gap: 6px;
-    padding: 6px 20px;
+    padding: 16px 20px;
     font-size: 0.8125rem; font-weight: 500; color: rgba(255,255,255,0.75);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0;
     border-right: 1px solid rgba(255,255,255,0.15);
   }
   .trust-item:last-child { border-right: none; }
   .trust-item strong { color: var(--stone); font-weight: 600; }
-  @media (max-width: 600px) {
-    .trust-item { width: 50%; border-right: none; padding: 8px 12px; }
+  @media (max-width: 768px) {
+    .trust-bar-inner { justify-content: flex-start; padding: 0 16px; }
+    .trust-item { padding: 14px 16px; font-size: 0.8rem; }
   }
 
   /* ── SECTIONS GENERAL ── */
@@ -1274,15 +1280,13 @@
     <h3 id="modal-title">Get the Full Picture</h3>
     <p>Floor plans, pricing, and site visit slots — all in one conversation.</p>
     <form id="enquiry-form" novalidate>
-      <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
-        <div class="form-group" style="margin-bottom:0">
-          <label for="m-name">Full Name *</label>
-          <input type="text" id="m-name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-group" style="margin-bottom:0">
-          <label for="m-phone">Phone *</label>
-          <input type="tel" id="m-phone" name="phone" placeholder="+91 98765 43210" required>
-        </div>
+      <div class="form-group">
+        <label for="m-name">Full Name *</label>
+        <input type="text" id="m-name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="m-phone">Phone *</label>
+        <input type="tel" id="m-phone" name="phone" placeholder="+91 98765 43210" required>
       </div>
       <div class="form-group">
         <label for="m-email">Email Address</label>
@@ -1686,33 +1690,13 @@
       <!-- Animated location list -->
       <nav aria-label="Nearby locations">
         <div class="location-list" role="list" id="loc-list">
-          <div class="location-item" role="listitem" style="--bar-w:18%">
-            <div class="loc-item-inner">
-              <div class="loc-icon">🛍️</div>
-              <div><div class="location-place">AMB Cinemas &amp; Mall</div><div class="location-type">Entertainment &amp; Retail</div></div>
-            </div>
-            <div class="loc-dist-wrap">
-              <span class="location-distance">13 min</span>
-              <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
-            </div>
-          </div>
-          <div class="location-item" role="listitem" style="--bar-w:26%">
+          <div class="location-item" role="listitem" style="--bar-w:10%">
             <div class="loc-item-inner">
               <div class="loc-icon">🎓</div>
               <div><div class="location-place">CHIREC International School</div><div class="location-type">K-12 Education</div></div>
             </div>
             <div class="loc-dist-wrap">
               <span class="location-distance">3 min</span>
-              <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
-            </div>
-          </div>
-          <div class="location-item" role="listitem" style="--bar-w:34%">
-            <div class="loc-item-inner">
-              <div class="loc-icon">🏥</div>
-              <div><div class="location-place">Apollo Hospital</div><div class="location-type">Healthcare</div></div>
-            </div>
-            <div class="loc-dist-wrap">
-              <span class="location-distance">15 min</span>
               <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
             </div>
           </div>
@@ -1726,6 +1710,26 @@
               <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
             </div>
           </div>
+          <div class="location-item" role="listitem" style="--bar-w:42%">
+            <div class="loc-item-inner">
+              <div class="loc-icon">🛍️</div>
+              <div><div class="location-place">AMB Cinemas &amp; Mall</div><div class="location-type">Entertainment &amp; Retail</div></div>
+            </div>
+            <div class="loc-dist-wrap">
+              <span class="location-distance">13 min</span>
+              <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
+            </div>
+          </div>
+          <div class="location-item" role="listitem" style="--bar-w:50%">
+            <div class="loc-item-inner">
+              <div class="loc-icon">🏥</div>
+              <div><div class="location-place">Apollo Hospital</div><div class="location-type">Healthcare</div></div>
+            </div>
+            <div class="loc-dist-wrap">
+              <span class="location-distance">15 min</span>
+              <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
+            </div>
+          </div>
           <div class="location-item" role="listitem" style="--bar-w:50%">
             <div class="loc-item-inner">
               <div class="loc-icon">💼</div>
@@ -1736,13 +1740,23 @@
               <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
             </div>
           </div>
-          <div class="location-item" role="listitem" style="--bar-w:64%">
+          <div class="location-item" role="listitem" style="--bar-w:50%">
             <div class="loc-item-inner">
               <div class="loc-icon">🖥️</div>
               <div><div class="location-place">Gachibowli</div><div class="location-type">Tech Corridor</div></div>
             </div>
             <div class="loc-dist-wrap">
               <span class="location-distance">15 min</span>
+              <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
+            </div>
+          </div>
+          <div class="location-item" role="listitem" style="--bar-w:64%">
+            <div class="loc-item-inner">
+              <div class="loc-icon">🛣️</div>
+              <div><div class="location-place">ORR Access Point</div><div class="location-type">Outer Ring Road</div></div>
+            </div>
+            <div class="loc-dist-wrap">
+              <span class="location-distance">20 min</span>
               <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
             </div>
           </div>
@@ -1753,16 +1767,6 @@
             </div>
             <div class="loc-dist-wrap">
               <span class="location-distance">25 min</span>
-              <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
-            </div>
-          </div>
-          <div class="location-item" role="listitem" style="--bar-w:34%">
-            <div class="loc-item-inner">
-              <div class="loc-icon">🛣️</div>
-              <div><div class="location-place">ORR Access Point</div><div class="location-type">Outer Ring Road</div></div>
-            </div>
-            <div class="loc-dist-wrap">
-              <span class="location-distance">20 min</span>
               <div class="loc-bar-wrap"><div class="loc-bar"></div></div>
             </div>
           </div>

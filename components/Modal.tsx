@@ -66,15 +66,13 @@ export default function Modal() {
             <h3 id="modal-title">Get the Full Picture</h3>
             <p>Floor plans, pricing, and site visit slots — all in one conversation.</p>
             <form onSubmit={handleSubmit} noValidate>
-              <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
-                <div className="form-group" style={{ marginBottom: 0 }}>
-                  <label htmlFor="m-name">Full Name *</label>
-                  <input type="text" id="m-name" name="name" placeholder="Your name" required />
-                </div>
-                <div className="form-group" style={{ marginBottom: 0 }}>
-                  <label htmlFor="m-phone">Phone *</label>
-                  <input type="tel" id="m-phone" name="phone" placeholder="+91 98765 43210" required />
-                </div>
+              <div className="form-group">
+                <label htmlFor="m-name">Full Name *</label>
+                <input type="text" id="m-name" name="name" placeholder="Your name" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="m-phone">Phone *</label>
+                <input type="tel" id="m-phone" name="phone" placeholder="+91 98765 43210" required />
               </div>
               <div className="form-group">
                 <label htmlFor="m-email">Email Address</label>
