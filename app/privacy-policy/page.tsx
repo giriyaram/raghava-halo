@@ -43,7 +43,7 @@ Your information may be shared with:
 
 - **Realvision Reality Consultancy's sales team** — our authorised consultants who handle enquiry follow-ups and site visits.
 - **Raghava Group (the developer)** — as the project developer, they may receive your enquiry details to coordinate site visits, pricing, and possession-related communications.
-- **CRM and communication platforms** — we use GoHighLevel (GHL), a customer relationship management platform, to manage enquiries and communications. Your data is stored securely on their platform subject to their privacy policies.
+- **CRM and communication platforms** — we use a secure customer relationship management platform to manage enquiries and communications. Your data is stored securely on their platform subject to industry-standard privacy and security practices.
 - **Legal requirements** — if required by law, regulation, or court order, we may disclose your information to the appropriate authorities.
 
 We do not share your data with any unrelated third-party brokers, marketing agencies, or businesses outside the scope of this project.`,
