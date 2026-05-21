@@ -2,14 +2,14 @@
 import { useEffect, useRef } from 'react'
 
 const locations = [
-  { icon: '🛍️', place: 'AMB Cinemas & Mall', type: 'Entertainment & Retail', dist: '5 min', barW: '18%' },
-  { icon: '🎓', place: 'CHIREC International School', type: 'K-12 Education', dist: '8 min', barW: '26%' },
-  { icon: '🏥', place: 'Apollo Hospital', type: 'Healthcare', dist: '10 min', barW: '34%' },
+  { icon: '🛍️', place: 'AMB Cinemas & Mall', type: 'Entertainment & Retail', dist: '13 min', barW: '42%' },
+  { icon: '🎓', place: 'CHIREC International School', type: 'K-12 Education', dist: '3 min', barW: '10%' },
+  { icon: '🏥', place: 'Apollo Hospital', type: 'Healthcare', dist: '15 min', barW: '50%' },
   { icon: '📐', place: 'ISB Hyderabad', type: 'Business School', dist: '12 min', barW: '38%' },
   { icon: '💼', place: 'Financial District', type: 'IT & Business Hub', dist: '15 min', barW: '50%' },
-  { icon: '🖥️', place: 'Gachibowli', type: 'Tech Corridor', dist: '20 min', barW: '64%' },
+  { icon: '🖥️', place: 'Gachibowli', type: 'Tech Corridor', dist: '15 min', barW: '50%' },
   { icon: '🏙️', place: 'Hitech City', type: 'IT Hub', dist: '25 min', barW: '80%' },
-  { icon: '🛣️', place: 'ORR Access Point', type: 'Outer Ring Road', dist: '10 min', barW: '34%' },
+  { icon: '🛣️', place: 'ORR Access Point', type: 'Outer Ring Road', dist: '20 min', barW: '64%' },
 ]
 
 export default function Location() {
