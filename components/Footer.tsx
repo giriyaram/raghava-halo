@@ -37,9 +37,8 @@ export default function Footer() {
         </div>
         <hr className="footer-divider" />
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Raghava Group. All rights reserved.</p>
           <div className="footer-links">
-            <a href="#">Privacy Policy</a>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <a href="#">Terms of Use</a>
             <Link href="/sitemap.xml">Sitemap</Link>
           </div>
