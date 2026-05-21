@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useModal } from '@/lib/modal-context'
+import PhoneInput from '@/components/PhoneInput'
 
 export default function Modal() {
   const { open, closeModal } = useModal()
@@ -74,7 +75,7 @@ export default function Modal() {
               </div>
               <div className="form-group">
                 <label htmlFor="m-phone">Phone *</label>
-                <input type="tel" id="m-phone" name="phone" placeholder="+91 98765 43210" required />
+                <PhoneInput id="m-phone" name="phone" required />
               </div>
               <div className="form-group">
                 <label htmlFor="m-email">Email Address</label>
