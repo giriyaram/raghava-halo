@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useModal } from '@/lib/modal-context'
 
 const specs = [
@@ -41,13 +42,15 @@ export default function Tower3() {
               Learn About Tower 3
             </button>
           </div>
-          <div className="tower3-visual" aria-label="Tower 3 floor layout diagram" role="img">
-            {Array.from({ length: 10 }).map((_, i) => (
-              <div key={i} className="t3-floor">
-                {Array.from({ length: 4 }).map((_, j) => <div key={j} className="t3-unit" />)}
-              </div>
-            ))}
-            <div className="t3-label">4 homes per floor — all corners</div>
+          <div className="tower3-img-panel" role="img" aria-label="Halo Tower 3 render at golden hour">
+            <Image
+              src="/images/tower3.webp"
+              alt="Halo by Raghava Tower 3 — premium corner residences at golden hour, Kondapur Hyderabad"
+              fill
+              sizes="(max-width: 900px) 100vw, 50vw"
+              className="tower3-img"
+            />
+            <div className="tower3-img-overlay" aria-hidden="true" />
           </div>
         </div>
       </div>
