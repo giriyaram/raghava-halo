@@ -928,36 +928,31 @@
     display: grid; gap: 56px; align-items: center;
   }
   @media (min-width: 900px) { .vastu-grid { grid-template-columns: 1fr 1.2fr; } }
+
+  /* Floor plan image (left) */
   .vastu-visual {
-    height: 340px;
-    background: linear-gradient(135deg, var(--bg) 0%, var(--border) 100%);
-    border-radius: 4px; display: flex; align-items: center; justify-content: center;
-    position: relative; overflow: hidden;
+    height: 380px; border-radius: 8px; overflow: hidden;
+    position: relative; background: var(--bg);
+    box-shadow: 0 12px 48px rgba(28,43,58,0.10);
   }
-  .vastu-symbol {
-    width: 180px; height: 180px; position: relative;
+  @media (max-width: 899px) { .vastu-visual { height: 300px; } }
+  .vastu-floorplan-img {
+    object-fit: cover; object-position: center center;
+    filter: blur(5px) brightness(0.96) saturate(0.9);
+    transform: scale(1.06); /* prevents blur edge bleed */
+    transition: filter 0.4s ease;
   }
-  .vastu-outer {
-    width: 100%; height: 100%;
-    border: 2px solid rgba(200,184,154,0.5); border-radius: 50%;
-    position: absolute;
+  #vastu:hover .vastu-floorplan-img {
+    filter: blur(3px) brightness(0.98) saturate(1);
   }
-  .vastu-inner {
-    width: 60%; height: 60%;
-    border: 2px solid rgba(200,184,154,0.7); border-radius: 50%;
-    position: absolute; top: 20%; left: 20%;
-  }
-  .vastu-cross-h, .vastu-cross-v {
-    position: absolute; background: rgba(200,184,154,0.3);
-    top: 50%; left: 0; right: 0; height: 1px;
-    transform: translateY(-50%);
-  }
-  .vastu-cross-v { width: 1px; height: 100%; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); }
-  .vastu-center {
-    width: 24px; height: 24px;
-    background: var(--stone); border-radius: 50%;
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+  /* Subtle vignette so it merges with the section */
+  .vastu-img-overlay {
+    position: absolute; inset: 0;
+    background: radial-gradient(
+      ellipse 80% 80% at 50% 50%,
+      transparent 40%,
+      rgba(248,246,242,0.35) 100%
+    );
   }
 
   /* ── FAQ ── */

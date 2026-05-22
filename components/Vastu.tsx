@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useModal } from '@/lib/modal-context'
 
 export default function Vastu() {
@@ -7,14 +8,15 @@ export default function Vastu() {
     <section id="vastu" aria-labelledby="vastu-h2">
       <div className="container">
         <div className="vastu-grid">
-          <div className="vastu-visual" role="img" aria-label="Vastu symbol representing directional alignment">
-            <div className="vastu-symbol" aria-hidden="true">
-              <div className="vastu-outer" />
-              <div className="vastu-inner" />
-              <div className="vastu-cross-h" />
-              <div className="vastu-cross-v" />
-              <div className="vastu-center" />
-            </div>
+          <div className="vastu-visual" role="img" aria-label="Halo by Raghava vastu-aligned floor plan">
+            <Image
+              src="/images/floorplan.webp"
+              alt="Halo by Raghava vastu-aligned 3 BHK floor plan — top-down view"
+              fill
+              sizes="(max-width: 900px) 100vw, 45vw"
+              className="vastu-floorplan-img"
+            />
+            <div className="vastu-img-overlay" aria-hidden="true" />
           </div>
           <div>
             <div className="section-label">Planning Philosophy</div>
