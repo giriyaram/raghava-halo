@@ -1,17 +1,17 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 
-interface StatItem { number: number; suffix: string; label: string; prefix?: string }
+interface StatItem { number?: number; suffix?: string; label: string; prefix?: string; raw?: string }
 
 const stats: StatItem[] = [
   { number: 52, suffix: '', label: 'Floors' },
   { number: 3, suffix: '', label: 'Towers' },
-  { number: 5, suffix: '.5 Acres', label: 'Project Area' },
+  { raw: '5.5 Acres', label: 'Project Area' },
   { number: 1000, suffix: '+', label: 'Homes' },
   { number: 90, suffix: ',000 sft', label: 'Clubhouse + Stilt Amenities' },
   { number: 1800, suffix: '–2500 sft', label: 'Residence Sizes' },
-  { number: 1, suffix: '.6 Cr', label: 'Starting Price', prefix: '₹' },
-  { number: 8, suffix: '', label: 'Lifts per Tower (T1 & T2)' },
+  { raw: '₹1.6 Cr', label: 'Starting Price' },
+  { raw: '1:1', label: 'Ratio of Lifts' },
 ]
 
 function useCounter(target: number, started: boolean) {
@@ -34,13 +34,19 @@ function useCounter(target: number, started: boolean) {
 }
 
 function StatCard({ stat, started }: { stat: StatItem; started: boolean }) {
-  const val = useCounter(stat.number, started)
+  const val = useCounter(stat.number ?? 0, started)
   return (
     <div className="stat-card fade-up" role="listitem">
       <div className="stat-number">
-        {stat.prefix && <sup>{stat.prefix}</sup>}
-        <span>{val.toLocaleString('en-IN')}</span>
-        {stat.suffix && <sub>{stat.suffix}</sub>}
+        {stat.raw ? (
+          <span>{stat.raw}</span>
+        ) : (
+          <>
+            {stat.prefix && <sup>{stat.prefix}</sup>}
+            <span>{val.toLocaleString('en-IN')}</span>
+            {stat.suffix && <sub>{stat.suffix}</sub>}
+          </>
+        )}
       </div>
       <div className="stat-label">{stat.label}</div>
     </div>
