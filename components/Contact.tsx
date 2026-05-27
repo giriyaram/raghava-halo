@@ -19,7 +19,8 @@ export default function Contact() {
     const phone = (form.elements.namedItem('phone') as HTMLInputElement).value.trim()
     const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
     const interest = (form.elements.namedItem('interest') as HTMLSelectElement).value
-    if (!name || !phone) { alert('Please provide your name and phone number.'); return }
+    const phoneDigits = phone.replace(/\D/g, '')
+    if (!name || phoneDigits.length < 7) { alert('Please provide your name and phone number.'); return }
     setSubmittedName(name)
     setSubmitted(true)
     fetch(GHL_WEBHOOK, {

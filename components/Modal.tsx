@@ -30,7 +30,8 @@ export default function Modal() {
     const p = (form.elements.namedItem('phone') as HTMLInputElement).value.trim()
     const em = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
     const interest = (form.elements.namedItem('interest') as HTMLSelectElement).value
-    if (!n || !p) { alert('Please provide your name and phone number.'); return }
+    const phoneDigits = p.replace(/\D/g, '')
+    if (!n || phoneDigits.length < 7) { alert('Please provide your name and phone number.'); return }
     setName(n)
     setSubmitted(true)
     fetch(GHL_WEBHOOK, {
