@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="hero-overlay-top" aria-hidden="true" />
       <div className="container">
         <div className="hero-content">
-          <div className="hero-eyebrow">Kondapur, Hyderabad · Now Open for Enquiries</div>
+          <div className="hero-eyebrow">Kondapur, Hyderabad · Pre-Launch Enquiries Open</div>
           <h1 className="hero-h1" id="hero-h1">
             Thoughtfully Planned<br /><em>High-Rise Living in Kondapur</em>
           </h1>
@@ -28,11 +28,11 @@ export default function Hero() {
             Every plan. Every lift. Every corridor. Built for 1,000 families who want more without the noise.
           </p>
           <div className="hero-ctas">
-            <button className="btn-primary" onClick={openModal} aria-label="Explore Halo Residences and enquire">
+            <button className="btn-primary" onClick={openModal} aria-label="Explore available residences and enquire">
               Explore Residences
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
-            <button className="btn-outline" onClick={openModal} aria-label="Download Halo brochure">
+            <button className="btn-outline" onClick={openModal} aria-label="Download project brochure">
               Download Brochure
             </button>
           </div>

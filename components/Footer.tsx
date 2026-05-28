@@ -44,12 +44,13 @@ export default function Footer() {
           </div>
         </div>
         <p className="footer-disclaimer">
-          This is a pre-launch marketing communication for Halo by Raghava. All details including
-          specifications, pricing, floor plans, amenities, and timelines are indicative and subject
-          to change without prior notice. RERA registration details will be updated shortly.
-          Renderings shown are artistic impressions and may not accurately reflect the final product.
-          Please verify all details with our sales team before making any investment decision.
-          Raghava Group is not responsible for decisions taken basis marketing materials alone.
+          This is a pre-launch marketing communication for an upcoming residential project in Kondapur, Hyderabad,
+          by Raghava Group. All details including specifications, pricing, floor plans, amenities, and timelines
+          are indicative and subject to change without prior notice. RERA registration is in process and details
+          will be updated shortly. Renderings shown are artistic impressions and may not accurately reflect the
+          final product. Please verify all details with our sales team before making any investment decision.
+          This communication does not constitute an offer or invitation to purchase. The developer is not
+          responsible for decisions made solely on the basis of marketing materials.
         </p>
       </div>
     </footer>

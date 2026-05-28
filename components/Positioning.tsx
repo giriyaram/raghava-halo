@@ -9,12 +9,12 @@ export default function Positioning() {
       <div className="container">
         <div className="positioning-grid">
           <div>
-            <div className="section-label">Why Halo</div>
+            <div className="section-label">Why This Project</div>
             <h2 className="section-h2" id="positioning-h2">
               Vertical Living,<br />Reimagined for the Way <em>You Actually Live</em>
             </h2>
             <p className="section-lead">
-              Most high-rises are designed for the brochure. Halo is designed for Tuesday morning.
+              Most high-rises are designed for the brochure. This one is designed for Tuesday morning.
               For the school run, the late work call, the weekend family lunch.
             </p>
             <p className="section-lead" style={{ marginTop: '16px' }}>
@@ -26,7 +26,7 @@ export default function Positioning() {
               <a href="#residences" className="btn-ghost">See Residences</a>
             </div>
           </div>
-          <div className="positioning-visual" role="img" aria-label="Low-angle view of Halo by Raghava towers">
+          <div className="positioning-visual" role="img" aria-label="Low-angle view of premium high-rise towers in Kondapur">
             <Image
               src="/images/Low-angle.webp"
               alt="Halo by Raghava — low-angle view of the high-rise towers in Kondapur, Hyderabad"
@@ -36,7 +36,7 @@ export default function Positioning() {
             />
             <div className="positioning-visual-overlay" aria-hidden="true" />
             <div className="positioning-visual-inner">
-              <div className="positioning-tag">Launching June–July 2025</div>
+              <div className="positioning-tag">Pre-Launch — Enquiries Open</div>
               <blockquote className="positioning-quote">
                 &ldquo;Thoughtful planning creates better everyday living.&rdquo;
               </blockquote>

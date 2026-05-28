@@ -23,7 +23,7 @@ export default function Tower3() {
             </h2>
             <p className="tower3-body">
               Only 4 residences per floor. 4 dedicated lifts. Three open sides. Natural cross-ventilation
-              by design. Tower 3 at Halo isn&apos;t a premium upgrade — it&apos;s a fundamentally different
+              by design. Tower 3 isn&apos;t a premium upgrade — it&apos;s a fundamentally different
               living experience built into the same community.
             </p>
             <div className="tower3-specs" role="list">

@@ -25,7 +25,7 @@ export default function Vastu() {
               <em>As a Foundation.</em>
             </h2>
             <p className="section-lead">
-              Vastu compliance at Halo is not a checkbox. It has been designed into the orientation
+              Vastu compliance here is not a checkbox. It has been designed into the orientation
               of towers, the placement of entrances, and the natural flow through each home.
             </p>
             <p className="section-lead" style={{ marginTop: '16px' }}>

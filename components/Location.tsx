@@ -43,7 +43,7 @@ export default function Location() {
         </h2>
         <p className="section-lead">
           You are not betting on future development. Kondapur is fully formed — schools, hospitals,
-          malls, restaurants, and road connectivity are already in place. Halo sits at the centre of it.
+          malls, restaurants, and road connectivity are already in place. This project sits at the centre of it.
         </p>
         <div className="location-grid">
           {/* Animated map card */}
@@ -53,7 +53,7 @@ export default function Location() {
             rel="noopener noreferrer"
             className="loc-map-card"
             id="loc-map-card"
-            aria-label="View Halo by Raghava location on Google Maps"
+            aria-label="View project location on Google Maps"
           >
             <div className="loc-grid" aria-hidden="true" />
             <svg className="loc-svg" viewBox="0 0 500 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -92,7 +92,7 @@ export default function Location() {
                 <div className="loc-pin-ring loc-pin-ring2" />
                 <div className="loc-pin-dot" />
               </div>
-              <div className="loc-pin-label" style={{ position: 'relative' }}>Halo · Kondapur</div>
+              <div className="loc-pin-label" style={{ position: 'relative' }}>New Launch · Kondapur</div>
             </div>
             <div className="loc-map-bottom" aria-hidden="true">
               <div className="loc-map-name">Kondapur, Hyderabad</div>

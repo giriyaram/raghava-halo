@@ -28,7 +28,7 @@ export default function Residences() {
             3 BHK Residences Designed With<br /><em>Uncommon Thoughtfulness</em>
           </h2>
           <p className="section-lead">
-            Every home at Halo is a 3 BHK. No compromises, no smaller configurations tucked into
+            Every home here is exclusively a 3 BHK. No compromises, no smaller configurations tucked into
             the margins. Three well-planned bedroom apartments, in three sizes, for three kinds of families.
           </p>
         </div>

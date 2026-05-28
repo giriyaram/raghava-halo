@@ -31,7 +31,7 @@ export default function Nav() {
             <li><Link href="/blog">Blog</Link></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
-          <button className="nav-cta" onClick={openModal} aria-label="Enquire about Halo by Raghava">
+          <button className="nav-cta" onClick={openModal} aria-label="Enquire about this project">
             Enquire Now
           </button>
           <button
