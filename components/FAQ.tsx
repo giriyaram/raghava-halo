@@ -4,7 +4,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What is this residential project?',
-    a: 'This is a premium 52-floor high-rise residential project in Kondapur, Hyderabad, by Raghava Group. Spread across 5.5 acres with 3 towers and over 1,000 homes, it offers exclusively 3 BHK apartments ranging from 1,800 to 2,500 sq ft, starting at ₹1.6 Cr.',
+    a: 'This is a premium 52-floor high-rise residential project in Kondapur, Hyderabad, by Raghava Group. Spread across 5.1 acres with 3 towers and over 1,000 homes, it offers exclusively 3 BHK apartments ranging from 1,800 to 2,500 sq ft, starting at ₹1.6 Cr.',
   },
   {
     q: 'Where exactly is the project located in Kondapur?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'What amenities are included?',
-    a: 'The project features a 90,000 sq ft clubhouse along with stilt-level amenities — including a lap pool, kids pool, gymnasium, yoga pavilion, co-working lounge, mini theatre, jogging track, badminton courts, cricket practice net, party hall, and more. All at stilt level — no extra lift ride required.',
+    a: 'The project features a 1,50,000 sq ft clubhouse along with stilt-level amenities — including a lap pool, kids pool, gymnasium, yoga pavilion, co-working lounge, mini theatre, jogging track, badminton courts, cricket practice net, party hall, and more. All at stilt level — no extra lift ride required.',
   },
   {
     q: 'Is the project RERA registered?',

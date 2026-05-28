@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="brand-name">Halo <span>·</span> Raghava</div>
+            <img src="/images/raghava-logo.jpg" alt="Raghava Group" style={{ height: '40px', width: 'auto', display: 'block', marginBottom: '16px' }} />
             <p>
-              A premium high-rise residential project by Raghava Group. 52 floors. 3 towers.
+              An upcoming premium high-rise residential project by Raghava Group. 52 floors. 3 towers.
               1,000+ thoughtfully planned 3 BHK homes in Kondapur, Hyderabad.
             </p>
           </div>

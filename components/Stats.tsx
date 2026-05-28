@@ -6,9 +6,9 @@ interface StatItem { number?: number; suffix?: string; label: string; prefix?: s
 const stats: StatItem[] = [
   { number: 52, suffix: '', label: 'Floors' },
   { number: 3, suffix: '', label: 'Towers' },
-  { raw: '5.5 Acres', label: 'Project Area' },
+  { raw: '5.1 Acres', label: 'Project Area' },
   { number: 1000, suffix: '+', label: 'Homes' },
-  { number: 90, suffix: ',000 sft', label: 'Clubhouse + Stilt Amenities' },
+  { raw: '1,50,000 sft', label: 'Clubhouse + Stilt Amenities' },
   { number: 1800, suffix: '–2500 sft', label: 'Residence Sizes' },
   { raw: '₹1.6 Cr', label: 'Starting Price' },
   { raw: '1:1', label: 'Ratio of Lifts' },

@@ -20,7 +20,7 @@ export default function Amenities() {
         <div className="amenities-lead">
           <div className="section-label">Amenities</div>
           <h2 className="section-h2" id="amenities-h2">
-            90,000 sq ft Clubhouse.<br />All Amenities at Stilt Level.{' '}
+            1,50,000 sq ft Clubhouse.<br />All Amenities at Stilt Level.{' '}
             <em>Not a Rooftop Afterthought.</em>
           </h2>
           <p className="section-lead">
@@ -38,7 +38,7 @@ export default function Amenities() {
         </div>
         <div className="amenities-note">
           <p>
-            <strong>The 90,000 sft clubhouse sits at the heart of the project, and all amenities are at stilt level.</strong>{' '}
+            <strong>The 1,50,000 sft clubhouse sits at the heart of the project, and all amenities are at stilt level.</strong>{' '}
             No elevator ride to the pool. No elevator wait after your morning run. Step out of the
             lobby and you are already there — access integrated into the building the way it should
             have always been.
