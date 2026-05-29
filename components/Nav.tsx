@@ -20,9 +20,7 @@ export default function Nav() {
     <>
       <nav id="nav" className={scrolled ? 'scrolled' : ''} role="navigation" aria-label="Main navigation">
         <div className="nav-inner">
-          <Link href="/" className="nav-logo" aria-label="Homepage">
-            <img src="/images/raghava-logo.jpg" alt="Raghava Group" style={{ height: '36px', width: 'auto', display: 'block' }} />
-          </Link>
+          <Link href="/" className="nav-logo" aria-label="Homepage" />
           <ul className="nav-links" role="list">
             <li><a href="#positioning">Overview</a></li>
             <li><a href="#residences">Residences</a></li>
