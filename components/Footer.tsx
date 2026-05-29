@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="footer-brand">
             <img src="/images/raghava-logo.jpg" alt="Raghava Group" style={{ height: '40px', width: 'auto', display: 'block', marginBottom: '16px' }} />
             <p>
-              An upcoming premium high-rise residential project by Raghava Group. 52 floors. 3 towers.
+              An upcoming premium high-rise residential project. 52 floors. 3 towers.
               1,000+ thoughtfully planned 3 BHK homes in Kondapur, Hyderabad.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
         <p className="footer-disclaimer">
           This is a pre-launch marketing communication for an upcoming residential project in Kondapur, Hyderabad,
-          by Raghava Group. All details including specifications, pricing, floor plans, amenities, and timelines
+          by the developer. All details including specifications, pricing, floor plans, amenities, and timelines
           are indicative and subject to change without prior notice. RERA registration is in process and details
           will be updated shortly. Renderings shown are artistic impressions and may not accurately reflect the
           final product. Please verify all details with our sales team before making any investment decision.

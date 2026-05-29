@@ -42,7 +42,7 @@ export default function Tower3() {
               Learn About Tower 3
             </button>
           </div>
-          <div className="tower3-img-panel" role="img" aria-label="Halo Tower 3 render at golden hour">
+          <div className="tower3-img-panel" role="img" aria-label="Tower 3 render at golden hour">
             <Image
               src="/images/tower3.webp"
               alt="Halo by Raghava Tower 3 — premium corner residences at golden hour, Kondapur Hyderabad"

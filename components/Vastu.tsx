@@ -8,7 +8,7 @@ export default function Vastu() {
     <section id="vastu" aria-labelledby="vastu-h2">
       <div className="container">
         <div className="vastu-grid">
-          <div className="vastu-visual" role="img" aria-label="Halo by Raghava vastu-aligned floor plan">
+          <div className="vastu-visual" role="img" aria-label="Vastu-aligned 3 BHK floor plan">
             <Image
               src="/images/floorplan.webp"
               alt="Halo by Raghava vastu-aligned 3 BHK floor plan — top-down view"

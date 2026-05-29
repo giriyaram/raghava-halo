@@ -4,7 +4,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What is this residential project?',
-    a: 'This is a premium 52-floor high-rise residential project in Kondapur, Hyderabad, by Raghava Group. Spread across 5.1 acres with 3 towers and over 1,000 homes, it offers exclusively 3 BHK apartments ranging from 1,800 to 2,500 sq ft, starting at ₹1.6 Cr.',
+    a: 'This is a premium 52-floor high-rise residential project in Kondapur, Hyderabad. Spread across 5.1 acres with 3 towers and over 1,000 homes, it offers exclusively 3 BHK apartments ranging from 1,800 to 2,500 sq ft, starting at ₹1.6 Cr.',
   },
   {
     q: 'Where exactly is the project located in Kondapur?',

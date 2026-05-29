@@ -21,11 +21,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Halo by Raghava | Premium 3 BHK Apartments in Kondapur, Hyderabad',
-    template: '%s | Halo by Raghava',
+    default: 'Premium 3 BHK Apartments in Kondapur, Hyderabad | New High-Rise Launch',
+    template: '%s | Premium Residences, Kondapur',
   },
   description:
-    'Discover Halo by Raghava — 52-floor premium high-rise in Kondapur, Hyderabad. 3 BHK apartments from 1,800–2,500 sq ft starting ₹1.6 Cr. 90,000 sft clubhouse + stilt-level amenities. Vastu-aligned. Book a site visit today.',
+    'Upcoming premium 52-floor high-rise in Kondapur, Hyderabad. Exclusively 3 BHK apartments from 1,800–2,500 sq ft starting ₹1.6 Cr. 1,50,000 sft clubhouse + stilt-level amenities. Vastu-aligned. Book a site visit today.',
   keywords: [
     '3 BHK flats in Kondapur',
     'high rise apartments Kondapur',
@@ -38,25 +38,25 @@ export const metadata: Metadata = {
     'apartments with balconies Hyderabad',
   ],
   openGraph: {
-    title: 'Halo by Raghava | Premium 3 BHK Apartments in Kondapur, Hyderabad',
+    title: 'Premium 3 BHK Apartments in Kondapur, Hyderabad | New High-Rise Launch',
     description:
-      '52-floor premium high-rise in Kondapur. 3 BHK residences from 1,800–2,500 sq ft, starting ₹1.6 Cr. 90,000 sft clubhouse + stilt-level amenities.',
+      'Upcoming 52-floor premium high-rise in Kondapur. 3 BHK residences from 1,800–2,500 sq ft, starting ₹1.6 Cr. 1,50,000 sft clubhouse + stilt-level amenities.',
     type: 'website',
     url: 'https://raghavakondapur.com',
-    siteName: 'Halo by Raghava',
+    siteName: 'Premium Residences Kondapur',
     images: [
       {
         url: 'https://raghavakondapur.com/images/OG.webp',
         width: 1200,
         height: 630,
-        alt: 'Halo by Raghava — Premium 3 BHK High-Rise in Kondapur, Hyderabad',
+        alt: 'Upcoming Premium 3 BHK High-Rise in Kondapur, Hyderabad',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Halo by Raghava | Premium 3 BHK in Kondapur',
-    description: '52-floor high-rise. 3 BHK from ₹1.6 Cr. Kondapur, Hyderabad.',
+    title: 'Premium 3 BHK High-Rise in Kondapur, Hyderabad',
+    description: 'Upcoming 52-floor high-rise. 3 BHK from ₹1.6 Cr. Kondapur, Hyderabad.',
     images: ['https://raghavakondapur.com/images/OG.webp'],
   },
   alternates: {

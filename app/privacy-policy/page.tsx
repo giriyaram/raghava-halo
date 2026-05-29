@@ -5,8 +5,8 @@ import Modal from '@/components/Modal'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Halo by Raghava',
-  description: 'Privacy Policy for Halo by Raghava — how we collect, use, and protect your personal information.',
+  title: 'Privacy Policy | Premium Residences, Kondapur',
+  description: 'Privacy Policy for this upcoming residential project in Kondapur — how we collect, use, and protect your personal information.',
   alternates: { canonical: 'https://raghavakondapur.com/privacy-policy' },
   robots: { index: false, follow: false },
 }
@@ -27,13 +27,13 @@ We do not collect payment information, government IDs, or any sensitive personal
     title: '2. How We Use Your Information',
     content: `The information you provide is used solely for the following purposes:
 
-- To respond to your enquiry about Halo by Raghava.
+- To respond to your enquiry about this residential project.
 - To share project details, floor plans, pricing, and availability.
 - To schedule site visits or virtual walkthroughs.
 - To send relevant updates about project launch, possession timelines, and offers.
 - To maintain a record of your interest for our sales and customer relationship management.
 
-We will not use your information for any purpose unrelated to Halo by Raghava without your explicit consent.`,
+We will not use your information for any purpose unrelated to this project without your explicit consent.`,
   },
   {
     title: '3. How We Share Your Information',
@@ -42,7 +42,7 @@ We will not use your information for any purpose unrelated to Halo by Raghava wi
 Your information may be shared with:
 
 - **Realvision Reality Consultancy's sales team** — our authorised consultants who handle enquiry follow-ups and site visits.
-- **Raghava Group (the developer)** — as the project developer, they may receive your enquiry details to coordinate site visits, pricing, and possession-related communications.
+- **The Developer** — as the project developer, they may receive your enquiry details to coordinate site visits, pricing, and possession-related communications.
 - **CRM and communication platforms** — we use a secure customer relationship management platform to manage enquiries and communications. Your data is stored securely on their platform subject to industry-standard privacy and security practices.
 - **Legal requirements** — if required by law, regulation, or court order, we may disclose your information to the appropriate authorities.
 
@@ -52,7 +52,7 @@ We do not share your data with any unrelated third-party brokers, marketing agen
     title: '4. WhatsApp & SMS Communication',
     content: `By submitting your phone number on this website, you consent to being contacted via WhatsApp and/or SMS for enquiry-related communications.
 
-All communication will be strictly related to Halo by Raghava. You may opt out of further WhatsApp or SMS communications at any time by informing our team directly.`,
+All communication will be strictly related to this residential project. You may opt out of further WhatsApp or SMS communications at any time by informing our team directly.`,
   },
   {
     title: '5. Data Retention',
@@ -102,7 +102,7 @@ To exercise any of these rights, please contact us at the details provided below
     content: `If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:
 
 **Realvision Reality Consultancy**
-Authorised Channel Partner — Halo by Raghava
+Authorised Channel Partner — Upcoming Project, Kondapur
 RERA Agent No: A01100003800
 Hyderabad, Telangana
 📞 +91 98490 19238
@@ -179,8 +179,8 @@ export default function PrivacyPolicyPage() {
             color: 'var(--text)',
           }}>
             Realvision Reality Consultancy (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) is an authorised channel
-            partner firm operating this website on behalf of Halo by Raghava (&ldquo;the Project&rdquo;),
-            developed by Raghava Group. This Privacy Policy explains how we collect, use, store, and
+            partner firm operating this website on behalf of an upcoming residential project in Kondapur (&ldquo;the Project&rdquo;),
+            developed by the project developer. This Privacy Policy explains how we collect, use, store, and
             protect the personal information you provide when enquiring about the project through
             this website. By submitting an enquiry, you agree to the terms of this policy.
           </div>
@@ -244,7 +244,7 @@ export default function PrivacyPolicyPage() {
             flexWrap: 'wrap',
           }}>
             <Link href="/" style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>
-              ← Back to Halo
+              ← Back to Homepage
             </Link>
             <Link href="/#contact" style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>
               Enquire About the Project

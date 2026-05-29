@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 // Metadata can't be exported from a 'use client' component,
 // so we set it via a separate metadata export pattern — handled below via head tags
 
-const WA = 'https://wa.me/919849019238?text=Hi%2C+I+just+enquired+about+Halo+by+Raghava.+Looking+forward+to+learning+more.'
+const WA = 'https://wa.me/919849019238?text=Hi%2C+I+just+enquired+about+the+upcoming+residential+project+in+Kondapur.+Looking+forward+to+learning+more.'
 
 const steps = [
   {
@@ -368,7 +368,7 @@ export default function ThankYouPage() {
           </div>
 
           <p className="ty-eyebrow" data-reveal data-delay="100">
-            Halo by Raghava · Kondapur, Hyderabad
+New Launch · Kondapur, Hyderabad
           </p>
 
           <h1 className="ty-h1" data-reveal data-delay="200">
@@ -376,7 +376,7 @@ export default function ThankYouPage() {
           </h1>
 
           <p className="ty-sub" data-reveal data-delay="350">
-            Most people will hear about Halo three months from now.
+            Most people will hear about this project three months from now.
             You enquired before the launch. That&apos;s a real advantage — and our team will make sure you feel it.
           </p>
 
@@ -444,9 +444,9 @@ export default function ThankYouPage() {
 
         {/* ── MINI FOOTER ── */}
         <footer className="ty-footer">
-          <div className="ty-footer-brand">Halo <span>·</span> Raghava</div>
+          <div className="ty-footer-brand"><img src="/images/raghava-logo.jpg" alt="Developer Logo" style={{ height: '28px', width: 'auto' }} /></div>
           <div className="ty-footer-links">
-            <Link href="/">Back to Halo</Link>
+            <Link href="/">Back to Homepage</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>
           </div>
         </footer>
