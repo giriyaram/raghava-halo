@@ -44,20 +44,11 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://raghavakondapur.com',
     siteName: 'Premium Residences Kondapur',
-    images: [
-      {
-        url: 'https://raghavakondapur.com/images/OG.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Upcoming Premium 3 BHK High-Rise in Kondapur, Hyderabad',
-      },
-    ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Premium 3 BHK High-Rise in Kondapur, Hyderabad',
     description: 'Upcoming 52-floor high-rise. 3 BHK from ₹1.6 Cr. Kondapur, Hyderabad.',
-    images: ['https://raghavakondapur.com/images/OG.webp'],
   },
   alternates: {
     canonical: 'https://raghavakondapur.com',
