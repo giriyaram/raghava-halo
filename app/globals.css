@@ -433,6 +433,11 @@
     font-size: 0.8rem; font-weight: 500; color: var(--muted);
     letter-spacing: 0.06em; text-transform: uppercase;
   }
+  @media (max-width: 599px) {
+    .stat-card { padding: 20px 12px; }
+    .stat-number { font-size: 1.4rem; margin-bottom: 5px; }
+    .stat-label { font-size: 0.68rem; letter-spacing: 0.04em; }
+  }
 
   /* ── RESIDENCES ── */
   #residences { background: var(--white); }
