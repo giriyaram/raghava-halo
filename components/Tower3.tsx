@@ -44,7 +44,7 @@ export default function Tower3() {
           </div>
           <div className="tower3-img-panel" role="img" aria-label="Tower 3 render at golden hour">
             <Image
-              src="/images/tower3.webp"
+              src="/images/tower_plain.webp"
               alt="Halo by Raghava Tower 3 — premium corner residences at golden hour, Kondapur Hyderabad"
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
