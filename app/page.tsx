@@ -6,7 +6,9 @@ import Positioning from '@/components/Positioning'
 import Stats from '@/components/Stats'
 import Residences from '@/components/Residences'
 import Tower3 from '@/components/Tower3'
+import SmartPlanning from '@/components/SmartPlanning'
 import Amenities from '@/components/Amenities'
+import Wellness from '@/components/Wellness'
 import Location from '@/components/Location'
 import Lifestyle from '@/components/Lifestyle'
 import Vastu from '@/components/Vastu'
@@ -29,7 +31,9 @@ export default function HomePage() {
         <Stats />
         <Residences />
         <Tower3 />
+        <SmartPlanning />
         <Amenities />
+        <Wellness />
         <Location />
         <Lifestyle />
         <Vastu />
