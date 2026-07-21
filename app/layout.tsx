@@ -72,7 +72,7 @@ const jsonLd = {
       description: 'Raghava Group is a Hyderabad-based real estate developer known for premium residential projects.',
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+91-9849019238',
+        telephone: '+91-9000139976',
         contactType: 'sales',
         availableLanguage: ['English', 'Telugu', 'Hindi'],
       },
@@ -131,7 +131,7 @@ const jsonLd = {
       '@id': 'https://raghavakondapur.com/#localbusiness',
       name: 'Halo by Raghava — Sales Office',
       url: 'https://raghavakondapur.com',
-      telephone: '+91-9849019238',
+      telephone: '+91-9000139976',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Kondapur',

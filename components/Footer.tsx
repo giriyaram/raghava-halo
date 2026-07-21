@@ -27,7 +27,7 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul role="list">
               <li><a href="#contact">Enquire Now</a></li>
-              <li><a href="https://wa.me/919849019238" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="https://wa.me/919000139976" target="_blank" rel="noopener">WhatsApp</a></li>
               <li><a href="#contact">Request Site Visit</a></li>
               <li><a href="#contact">Brochure Download</a></li>
               <li><a href="#contact">NRI Buyers</a></li>
