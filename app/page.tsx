@@ -1,3 +1,4 @@
+import AnnouncementBar from '@/components/AnnouncementBar'
 import Nav from '@/components/Nav'
 import ScrollAnimations from '@/components/ScrollAnimations'
 import Hero from '@/components/Hero'
@@ -25,6 +26,7 @@ import FloatingButtons from '@/components/FloatingButtons'
 export default function HomePage() {
   return (
     <>
+      <AnnouncementBar />
       <Nav />
       <Modal />
       <ScrollAnimations />

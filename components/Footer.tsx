@@ -11,6 +11,7 @@ export default function Footer() {
               A RERA-approved high-rise community in Kondapur, Hyderabad, near HCU. Three towers,
               52 floors, and 1,000+ thoughtfully planned 3 BHK homes — crowned by the Halo.
             </p>
+            <p className="footer-rera">RERA Registration No. <strong>P02400011015</strong></p>
           </div>
           <div className="footer-col">
             <h4>Explore</h4>
@@ -47,7 +48,7 @@ export default function Footer() {
         </div>
         <p className="footer-disclaimer">
           This is a marketing communication for Raghava Halo, a residential project in Kondapur, Hyderabad.
-          The project is RERA approved; the registration number and approved documents are available on request.
+          The project is RERA approved under registration number P02400011015; approved documents are available on request.
           Images shown are architectural renders and artistic impressions and may differ from the final built
           product. All specifications, pricing, floor plans, amenities and timelines are indicative and subject
           to change per the RERA-registered plans. Please verify all details with our sales team before making

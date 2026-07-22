@@ -11,6 +11,7 @@
     --font-heading: var(--font-playfair), Georgia, serif;
     --font-body: var(--font-inter), -apple-system, sans-serif;
     --nav-h: 72px;
+    --ann-h: 44px;
     --max-w: 1200px;
     --radius: 2px;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,6 +37,64 @@
 
   .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
   @media (min-width: 1024px) { .container { padding: 0 48px; } }
+
+  /* ── ANNOUNCEMENT BAR ── */
+  #announcement-bar {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: var(--ann-h); z-index: 1100;
+    display: flex; align-items: center; gap: 16px;
+    padding: 0 16px 0 22px;
+    background: #111214;
+    border-bottom: 1px solid rgba(184,149,106,0.22);
+  }
+  @media (min-width: 1024px) { #announcement-bar { padding: 0 24px 0 40px; } }
+  @media (max-width: 767px) { :root { --ann-h: 48px; } }
+
+  .ann-marquee {
+    flex: 1; min-width: 0; overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
+  }
+  .ann-track {
+    display: inline-flex; width: max-content;
+    animation: ann-scroll 26s linear infinite;
+    will-change: transform;
+  }
+  .ann-marquee:hover .ann-track { animation-play-state: paused; }
+  @keyframes ann-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .ann-track { animation: none; } }
+
+  .ann-unit { display: inline-block; white-space: nowrap; }
+  .ann-group { display: inline; }
+  .ann-group > span {
+    font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.03em;
+    color: rgba(255,255,255,0.88);
+  }
+  .ann-accent { color: var(--gold); font-weight: 600; letter-spacing: 0.05em; }
+  .ann-dot {
+    color: rgba(184,149,106,0.5); margin: 0 18px; font-size: 0.62rem;
+    vertical-align: middle;
+  }
+
+  .ann-cta {
+    flex-shrink: 0;
+    background: var(--gold); color: #fff;
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase;
+    padding: 7px 18px; border-radius: 40px; white-space: nowrap;
+    transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  }
+  .ann-cta:hover { background: #a4824f; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(184,149,106,0.45); }
+  @media (max-width: 480px) {
+    .ann-cta { padding: 6px 13px; font-size: 0.66rem; letter-spacing: 0.05em; }
+    .ann-group > span { font-size: 0.75rem; }
+    .ann-dot { margin: 0 13px; }
+    #announcement-bar { padding-left: 16px; gap: 12px; }
+  }
+
+  /* When the bar is present, push the fixed nav / hero / mobile drawer down */
+  body.announcement-active #nav { top: var(--ann-h); }
+  body.announcement-active #hero { padding-top: calc(var(--nav-h) + var(--ann-h)); }
+  body.announcement-active #mobile-menu { top: calc(var(--nav-h) + var(--ann-h)); }
 
   /* ── NAV ── */
   #nav {
@@ -1255,6 +1314,11 @@
     font-size: 0.875rem; color: rgba(255,255,255,0.4);
     line-height: 1.7; max-width: 340px;
   }
+  .footer-rera {
+    margin-top: 14px; font-size: 0.8rem; letter-spacing: 0.03em;
+    color: rgba(255,255,255,0.45);
+  }
+  .footer-rera strong { color: var(--stone); font-weight: 600; letter-spacing: 0.04em; }
   .footer-col h4 {
     font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
     text-transform: uppercase; color: rgba(255,255,255,0.3);

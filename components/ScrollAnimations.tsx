@@ -43,7 +43,11 @@ export default function ScrollAnimations() {
       const target = document.querySelector(href)
       if (target) {
         e.preventDefault()
-        const top = target.getBoundingClientRect().top + window.pageYOffset - 80
+        // Offset by the actual fixed-header height (announcement bar + nav).
+        const bar = document.getElementById('announcement-bar')
+        const nav = document.getElementById('nav')
+        const headerH = (bar ? bar.offsetHeight : 0) + (nav ? nav.offsetHeight : 0) + 12
+        const top = target.getBoundingClientRect().top + window.pageYOffset - headerH
         window.scrollTo({ top, behavior: 'smooth' })
       }
     }

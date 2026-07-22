@@ -106,7 +106,7 @@ export default function Contact() {
                   WhatsApp Us Directly
                 </a>
                 <p style={{ fontSize: '0.78rem', color: 'var(--muted)', textAlign: 'center', marginTop: '14px' }}>
-                  RERA registration details available on request. Pricing subject to change at launch.
+                  RERA Reg. No. P02400011015. Pricing subject to change at launch.
                 </p>
               </form>
             )}

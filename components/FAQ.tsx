@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Is Raghava Halo RERA approved?',
-    a: 'Yes. Raghava Halo is RERA approved and now open for booking. The RERA registration number and approved documentation are shared with every enquiry — just ask our team.',
+    a: 'Yes. Raghava Halo is RERA approved and now open for booking, under RERA registration number P02400011015. The approved documentation is shared with every enquiry — just ask our team.',
   },
   {
     q: 'What makes the planning different from other high-rises?',

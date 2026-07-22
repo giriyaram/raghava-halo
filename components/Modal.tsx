@@ -105,7 +105,7 @@ export default function Modal() {
               WhatsApp Us Instead
             </a>
             <p style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '12px', textAlign: 'center' }}>
-              RERA registration details available on request
+              RERA Reg. No. P02400011015
             </p>
           </>
         )}
