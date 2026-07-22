@@ -26,7 +26,7 @@ export default function Contact() {
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, phone, email, interest, source: 'Halo by Raghava Website' }),
+      body: JSON.stringify({ name, phone, email, interest, source: 'Raghava Halo Website' }),
     }).catch(() => {})
     setTimeout(() => router.push('/thank-you'), 400)
   }
@@ -36,10 +36,11 @@ export default function Contact() {
       <div className="container">
         <div className="contact-inner">
           <div className="contact-left">
-            <div className="tower3-label">Get In Touch</div>
-            <h2 className="contact-h2" id="contact-h2">Get the Full Picture. Before Anyone Else Does.</h2>
+            <div className="tower3-label">Enquire</div>
+            <h2 className="contact-h2" id="contact-h2">Get the full picture — before the best homes are gone.</h2>
             <p className="contact-sub">
-              Floor plans, pricing, payment schedules, and site visit slots — all in one conversation.
+              Floor plans, launch pricing, payment schedules and site-visit slots for Raghava Halo —
+              all in one straightforward conversation.
             </p>
             <div className="contact-trust">
               {[
@@ -85,11 +86,11 @@ export default function Contact() {
                 <div className="form-group">
                   <label htmlFor="c-interest">I&apos;m interested in</label>
                   <select id="c-interest" name="interest">
-                    <option value="">Select residence type</option>
-                    <option>3 BHK Comfort (~1800 sft)</option>
-                    <option>3 BHK Premium (~2100 sft)</option>
-                    <option>Tower 3 Corner 3 BHK (~2500 sft)</option>
-                    <option>Not Sure Yet — Show Me All Options</option>
+                    <option value="">Select a residence</option>
+                    <option>The Essential — 3 BHK (~1,830 sft)</option>
+                    <option>The Signature — 3 BHK (~2,275 sft)</option>
+                    <option>The Sky Home — 3 BHK (~2,455 sft)</option>
+                    <option>Not sure yet — show me everything</option>
                   </select>
                 </div>
                 <button type="submit" className="form-submit">Send My Enquiry</button>

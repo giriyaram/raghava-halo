@@ -7,37 +7,51 @@ export default function Hero() {
   return (
     <section id="hero" aria-labelledby="hero-h1">
       <Image
-        src="/images/hero-bg.png"
-        alt="Halo by Raghava — three premium high-rise towers at golden hour in Kondapur, Hyderabad"
+        src="/renders/community-evening.webp"
+        alt="Raghava Halo — three high-rise towers at dusk in Kondapur, Hyderabad, crowned by the signature Halo"
         className="hero-img"
         fill
         priority
         sizes="100vw"
+        quality={85}
       />
       <div className="hero-overlay-left" aria-hidden="true" />
       <div className="hero-overlay-bottom" aria-hidden="true" />
       <div className="hero-overlay-top" aria-hidden="true" />
       <div className="container">
         <div className="hero-content">
-          <div className="hero-eyebrow">Kondapur, Hyderabad · Pre-Launch Enquiries Open</div>
+          <div className="hero-eyebrow">RERA Approved · Near HCU, Kondapur · Now Launching</div>
           <h1 className="hero-h1" id="hero-h1">
-            Thoughtfully Planned<br /><em>High-Rise Living in Kondapur</em>
+            Raghava <em>Halo</em>
           </h1>
+          <p className="hero-tagline">Thoughtfully planned high-rise living.</p>
           <p className="hero-sub">
-            52-floor high-rise living designed around your everyday — not just the view from the top.
-            Every plan. Every lift. Every corridor. Built for 1,000 families who want more without the noise.
+            Three towers. Fifty-two floors. A thousand homes built around one idea — that real
+            luxury isn&apos;t the chandelier in the lobby. It&apos;s a home that works, effortlessly,
+            every single day.
           </p>
           <div className="hero-ctas">
-            <button className="btn-primary" onClick={openModal} aria-label="Explore available residences and enquire">
-              Explore Residences
+            <button className="btn-primary" onClick={openModal} aria-label="Book a site visit at Raghava Halo">
+              Book a Site Visit
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
-            <button className="btn-outline" onClick={openModal} aria-label="Download project brochure">
-              Download Brochure
-            </button>
+            <a className="btn-outline" href="#residences" aria-label="View 3 BHK floor plans">
+              View Floor Plans
+            </a>
+          </div>
+          <div className="hero-meta">
+            <div className="hero-meta-item"><strong>3 BHK</strong><span>1,800–2,500 sft</span></div>
+            <div className="hero-meta-divider" aria-hidden="true" />
+            <div className="hero-meta-item"><strong>From ₹1.6 Cr</strong><span>Launch pricing</span></div>
+            <div className="hero-meta-divider" aria-hidden="true" />
+            <div className="hero-meta-item"><strong>5.5 Acres</strong><span>Gated community</span></div>
           </div>
         </div>
       </div>
+      <a href="#why" className="hero-scroll" aria-label="Scroll to explore">
+        <span>Explore</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+      </a>
     </section>
   )
 }

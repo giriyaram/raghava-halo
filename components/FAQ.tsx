@@ -3,44 +3,40 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: 'What is this residential project?',
-    a: 'This is a premium 52-floor high-rise residential project in Kondapur, Hyderabad. Spread across 5.1 acres with 3 towers and over 1,000 homes, it offers exclusively 3 BHK apartments ranging from 1,800 to 2,500 sq ft, starting at ₹1.6 Cr.',
+    q: 'What is Raghava Halo?',
+    a: 'Raghava Halo is a RERA-approved high-rise residential project in Kondapur, Hyderabad, near the University of Hyderabad (HCU). It spans 5.5 acres with 3 towers of 52 floors and over 1,000 homes — all thoughtfully planned 3 BHK residences of 1,800 to 2,500 sft, starting from ₹1.6 Cr.',
   },
   {
-    q: 'Where exactly is the project located in Kondapur?',
-    a: 'The project is located in Kondapur, one of Hyderabad\'s most developed and connected residential neighbourhoods. Close to AMB Mall, CHIREC International School, and Apollo Hospital, with 15-minute access to the Financial District and 25-minute access to Hitech City.',
+    q: 'Where exactly is Raghava Halo located?',
+    a: 'Raghava Halo is in Kondapur, one of west Hyderabad\'s most established neighbourhoods, next to the green expanse of HCU. It is roughly 5 minutes from the HCU campus, 12 minutes from Gachibowli, and about 15 minutes from the Financial District, with schools, malls and hospitals close by.',
   },
   {
     q: 'What sizes and prices are available?',
-    a: 'All residences are 3 BHK homes. Sizes range from 1,800 sq ft to 2,500 sq ft across three configurations: Comfort (~1,800 sft from ₹1.6 Cr), Premium (~2,100 sft from ₹1.9 Cr), and Tower 3 Corner units (~2,500 sft from ₹2.3 Cr). Contact our team for detailed pricing and payment plans.',
+    a: 'Every home is a 3 BHK, from about 1,830 sft to 2,455 sft across three layouts — The Essential (~1,830 sft from ₹1.6 Cr), The Signature (~2,275 sft), and The Sky Home (~2,455 sft). Pricing is indicative of the launch phase; contact our team for the current price list and payment plan.',
   },
   {
-    q: 'What makes Tower 3 different from Towers 1 and 2?',
-    a: 'Tower 3 is designed as an exclusive offering with only 4 homes per floor (vs 8 in Towers 1 and 2), 4 dedicated lifts, and all corner units — meaning every home has natural light, ventilation, and views from three open sides.',
+    q: 'Is Raghava Halo RERA approved?',
+    a: 'Yes. Raghava Halo is RERA approved and now open for booking. The RERA registration number and approved documentation are shared with every enquiry — just ask our team.',
   },
   {
-    q: 'When is the launch and what is the expected possession?',
-    a: 'This is a pre-launch project currently open for enquiries. Possession is targeted for mid-2030, subject to RERA timelines. Enquiring early gives buyers an advantage on floor plan selection and pre-launch pricing.',
+    q: 'What makes the planning different from other high-rises?',
+    a: 'Lower loading — roughly 29% against the 32–35% common elsewhere — means more of your built-up area becomes usable carpet, around 100–120 sft extra on a 2,000 sft home. Add curved, wider balconies, a private master-bedroom balcony, cross-ventilation, and Vastu-aligned layouts, and the home simply works better day to day.',
   },
   {
-    q: 'Are the apartments Vastu-compliant?',
-    a: 'Yes. Vastu alignment has been built into the core planning — from tower orientation to individual apartment layouts — not added as a cosmetic checkbox. The orientation of entrances, placement of key spaces, and flow through each home have all been planned accordingly.',
-  },
-  {
-    q: 'What amenities are included?',
-    a: 'The project features a 1,50,000 sq ft clubhouse along with stilt-level amenities — including a lap pool, kids pool, gymnasium, yoga pavilion, co-working lounge, mini theatre, jogging track, badminton courts, cricket practice net, party hall, and more. All at stilt level — no extra lift ride required.',
-  },
-  {
-    q: 'Is the project RERA registered?',
-    a: 'RERA registration is in process. Details will be shared upon request. Please contact our team for the latest compliance documentation.',
+    q: 'What amenities does Raghava Halo offer?',
+    a: 'A 90,000 sft wellness clubhouse anchors the community, alongside a lap pool, gym, rooftop yoga deck, tennis courts, a putting green, kids\' play zones, garden walks, co-working lounge, mini theatre and more. A dedicated wellness suite includes Red Light Therapy, Hyperbaric Oxygen Therapy (HBOT), a sauna and float therapy.',
   },
   {
     q: 'Does every apartment have balconies?',
-    a: 'Yes. Every apartment includes 2 balconies plus a dedicated sitout area. The master bedroom also has its own private balcony. Floor plans are designed for efficient circulation with minimal wasted corridors.',
+    a: 'Yes. Every home includes two full balconies plus a dedicated sitout, and every master bedroom opens to its own private balcony. Balcony edges are curved for more usable outdoor width.',
   },
   {
-    q: 'Is this project suitable for NRI buyers?',
-    a: 'Yes. Our team offers virtual walkthroughs, documentation support, and dedicated NRI assistance — so geography is not a barrier to understanding the project in full detail.',
+    q: 'When is possession?',
+    a: 'Construction is underway following RERA approval. Possession is targeted in line with the RERA-registered project schedule — our team will share the current handover timeline for each tower. Booking early gives you first pick of floors, views and launch-phase pricing.',
+  },
+  {
+    q: 'Is Raghava Halo suitable for NRI buyers?',
+    a: 'Absolutely. We offer virtual walkthroughs, complete documentation support and dedicated NRI assistance, so you can evaluate and book Raghava Halo confidently from anywhere in the world.',
   },
 ]
 
@@ -48,12 +44,23 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i)
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
+
   return (
     <section id="faq" aria-labelledby="faq-h2">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="container">
         <div className="section-label">Common Questions</div>
         <h2 className="section-h2" id="faq-h2">
-          Everything You Need to Know<br />Before You <em>Ask</em>
+          Everything you want to know<br />before you <em>ask.</em>
         </h2>
         <div className="faq-list" role="list">
           {faqs.map((faq, i) => (

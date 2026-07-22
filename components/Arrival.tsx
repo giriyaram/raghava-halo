@@ -1,0 +1,38 @@
+'use client'
+import Image from 'next/image'
+import { useModal } from '@/lib/modal-context'
+
+export default function Arrival() {
+  const { openModal } = useModal()
+  return (
+    <section id="arrival" aria-labelledby="arrival-h2">
+      <Image
+        src="/renders/clubhouse-entrance.webp"
+        alt="Raghava Halo grand arrival — the illuminated Halo above the clubhouse and forecourt fountain, Kondapur"
+        className="arrival-img"
+        fill
+        sizes="100vw"
+      />
+      <div className="arrival-scrim" aria-hidden="true" />
+      <div className="container">
+        <div className="arrival-content">
+          <div className="arrival-eyebrow">Arrival &amp; Clubhouse</div>
+          <h2 className="arrival-h2" id="arrival-h2">
+            Every evening, you come home<br />beneath the <em>Halo.</em>
+          </h2>
+          <p className="arrival-sub">
+            A 90,000 sft wellness clubhouse anchors the community, crowned by the illuminated ring
+            that gives Raghava Halo its name. The forecourt, the water, the light — an arrival that
+            tells you, and everyone visiting, that you chose well.
+          </p>
+          <div className="arrival-stats">
+            <div className="arrival-stat"><strong>90,000 sft</strong><span>Wellness clubhouse</span></div>
+            <div className="arrival-stat"><strong>5.5 acres</strong><span>Landscaped community</span></div>
+            <div className="arrival-stat"><strong>Grand</strong><span>Drop-off &amp; forecourt</span></div>
+          </div>
+          <button className="btn-primary" onClick={openModal}>Book a Clubhouse Walkthrough</button>
+        </div>
+      </div>
+    </section>
+  )
+}

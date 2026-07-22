@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 // Metadata can't be exported from a 'use client' component,
 // so we set it via a separate metadata export pattern — handled below via head tags
 
-const WA = 'https://wa.me/919000139976?text=Hi%2C+I+just+enquired+about+the+upcoming+residential+project+in+Kondapur.+Looking+forward+to+learning+more.'
+const WA = 'https://wa.me/919000139976?text=Hi%2C+I+just+enquired+about+Raghava+Halo+in+Kondapur.+Looking+forward+to+learning+more.'
 
 const steps = [
   {
@@ -38,22 +38,22 @@ const discovers = [
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
     ),
-    label: 'A lift ratio most builders don\'t advertise',
-    sub: 'The number that determines Monday morning.',
+    label: 'Lower loading — more usable carpet area',
+    sub: 'The extra room most brochures never mention.',
   },
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
     ),
-    label: 'Pre-launch pricing that shifts at possession',
-    sub: 'Early means something specific here.',
+    label: 'Launch pricing that moves as homes sell',
+    sub: 'Enquiring early means something specific here.',
   },
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
     ),
-    label: '90,000 sft of amenities at ground level',
-    sub: 'Not a rooftop afterthought.',
+    label: 'A 90,000 sft wellness clubhouse',
+    sub: 'With Red Light, HBOT, sauna and float therapy.',
   },
 ]
 
@@ -368,16 +368,16 @@ export default function ThankYouPage() {
           </div>
 
           <p className="ty-eyebrow" data-reveal data-delay="100">
-New Launch · Kondapur, Hyderabad
+Raghava Halo · RERA Approved · Kondapur
           </p>
 
           <h1 className="ty-h1" data-reveal data-delay="200">
-            Good Timing.<br /><em>You&apos;re Among the First.</em>
+            Good timing.<br /><em>You&apos;re among the first.</em>
           </h1>
 
           <p className="ty-sub" data-reveal data-delay="350">
-            Most people will hear about this project three months from now.
-            You enquired before the launch. That&apos;s a real advantage — and our team will make sure you feel it.
+            You enquired about Raghava Halo early — while the best floors and views are still open.
+            That&apos;s a real advantage, and our team will make sure you feel it.
           </p>
 
           <a href={WA} className="ty-hero-cta" target="_blank" rel="noopener noreferrer" data-reveal data-delay="480">
@@ -444,7 +444,7 @@ New Launch · Kondapur, Hyderabad
 
         {/* ── MINI FOOTER ── */}
         <footer className="ty-footer">
-          <div className="ty-footer-brand"><img src="/images/raghava-logo.jpg" alt="Developer Logo" style={{ height: '28px', width: 'auto' }} /></div>
+          <div className="ty-footer-brand">Raghava <span>Halo</span></div>
           <div className="ty-footer-links">
             <Link href="/">Back to Homepage</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>

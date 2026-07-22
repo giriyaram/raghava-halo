@@ -4,33 +4,33 @@ import { useModal } from '@/lib/modal-context'
 const benefits = [
   {
     id: 'carpet',
-    headline: 'More Carpet Area',
-    body: '~29% loading vs the 32–35% typical in competing projects. On a 2,000 sq ft home, that gap becomes 100–120 sq ft of additional space you can furnish and use.',
+    headline: 'More of what you pay for',
+    body: 'Lower loading — roughly 29% against the 32–35% common in competing projects. On a 2,000 sft home, that difference is 100–120 sft of real, furnishable space you get to keep.',
+  },
+  {
+    id: 'balcony',
+    headline: 'Balconies you actually use',
+    body: 'Curved balcony edges and a dedicated sitout give every home a genuine outdoor room — wide enough for a chair, a table, and a slow morning. Not a token ledge.',
   },
   {
     id: 'light',
-    headline: 'Consistent Natural Light',
-    body: 'East, West, and North facing orientations planned for daylight across every unit — not a coincidence, but a deliberate decision made at the design stage.',
+    headline: 'Light in every room',
+    body: 'Orientations were fixed at the design stage so daylight reaches living rooms and bedrooms across the day — a deliberate decision, not a happy accident of the site.',
   },
   {
     id: 'ventilation',
-    headline: 'Cross-Ventilation by Design',
-    body: 'Thoughtful placement of openings means rooms that breathe naturally, reducing HVAC dependence and lowering electricity costs over time.',
+    headline: 'Rooms that breathe',
+    body: 'Openings placed for genuine cross-ventilation mean cooler homes and lower running costs — the kind of comfort you feel long before you see the electricity bill.',
   },
   {
-    id: 'corridors',
-    headline: 'Minimal Wasted Corridors',
-    body: 'Lean circulation paths mean shared spaces serve movement, not padding. The building works more efficiently so your home is larger.',
+    id: 'vastu',
+    headline: 'Vastu, built into the bones',
+    body: 'A dedicated pooja space, considered entrances, and tower orientation aligned to Vastu — planned into the structure from the first drawing, never bolted on afterwards.',
   },
   {
-    id: 'floor',
-    headline: 'Only 4 Homes Per Floor',
-    body: 'Select towers keep just four residences per floor with 4 dedicated lifts — better privacy, shorter wait times, and a noticeably quieter daily experience.',
-  },
-  {
-    id: 'lifts',
-    headline: '1:1 Lift-to-Home Ratio',
-    body: 'No morning queues. Lift planning designed around how residents actually live — not minimum compliance requirements.',
+    id: 'cores',
+    headline: 'Quiet, efficient cores',
+    body: 'Multiple passenger lifts and a service lift per core, with lean corridors that move people instead of padding out the floor plate. Shorter waits, calmer common areas.',
   },
 ]
 
@@ -43,26 +43,26 @@ const CheckIcon = () => (
 export default function SmartPlanning() {
   const { openModal } = useModal()
   return (
-    <section id="smart-planning" aria-labelledby="smart-planning-h2">
+    <section id="planning" aria-labelledby="planning-h2">
       <div className="container">
 
         <div className="sp-header">
-          <div className="section-label">Architecture &amp; Planning</div>
-          <h2 className="section-h2" id="smart-planning-h2">
-            You&apos;re Paying for Every Square Foot.<br />
-            <em>You Should Actually Live in Every Square Foot.</em>
+          <div className="section-label">Thoughtful Planning</div>
+          <h2 className="section-h2" id="planning-h2">
+            You pay for every square foot.<br />
+            <em>You should get to live in every one.</em>
           </h2>
           <p className="section-lead">
-            Most buyers compare homes by total area. But not all area is equal — the gap between the
-            home on paper and the home you inhabit is where most buildings quietly disappoint.
-            Leaner architecture means more of what you paid for becomes living space.
+            Most buyers compare homes by total area — but not all area is equal. The gap between the
+            home on paper and the home you inhabit is where most towers quietly disappoint. Leaner
+            architecture means more of what you paid for ends up as living space.
           </p>
         </div>
 
         {/* Comparison block */}
         <div className="sp-comparison" role="group" aria-label="Loading factor comparison">
           <div className="sp-comp-col">
-            <div className="sp-comp-label">Most Competing Projects</div>
+            <div className="sp-comp-label">Typical High-Rise</div>
             <div className="sp-bar-wrap" aria-label="32–35% loading factor">
               <div className="sp-bar-fill sp-bar-other" style={{ width: '34%' }} aria-hidden="true" />
             </div>
@@ -71,20 +71,21 @@ export default function SmartPlanning() {
           </div>
           <div className="sp-comp-divider" aria-hidden="true">vs</div>
           <div className="sp-comp-col">
-            <div className="sp-comp-label sp-comp-label-this">Halo by Raghava</div>
+            <div className="sp-comp-label sp-comp-label-this">Raghava Halo</div>
             <div className="sp-bar-wrap" aria-label="approximately 29% loading factor">
               <div className="sp-bar-fill sp-bar-this" style={{ width: '29%' }} aria-hidden="true" />
             </div>
             <div className="sp-comp-stat sp-comp-stat-this">~29%</div>
-            <div className="sp-comp-sub">more carpet area — more usable home for the same sq ft on paper</div>
+            <div className="sp-comp-sub">more carpet area — more usable home for the same sft on paper</div>
           </div>
         </div>
 
         {/* Highlight callout */}
         <div className="sp-callout">
-          <div className="sp-callout-number">100 – 120 sq ft</div>
+          <div className="sp-callout-number">100–120 sft</div>
           <div className="sp-callout-label">
-            Additional usable carpet area on a typical 2,000 sq ft residence — roughly the size of a full bedroom, simply from smarter planning.
+            Additional usable carpet area on a typical 2,000 sft home — roughly a whole extra
+            bedroom, created by nothing more than smarter planning.
           </div>
         </div>
 
@@ -106,10 +107,10 @@ export default function SmartPlanning() {
         {/* Closing */}
         <div className="sp-close">
           <p className="sp-close-copy">
-            The floor plan you walk through looks similar to any premium project. What changes
-            is how much of it is genuinely, measurably yours.
+            On the brochure, every premium project looks the same. What changes at Raghava Halo is
+            how much of it is genuinely, measurably yours.
           </p>
-          <button className="btn-dark" onClick={openModal}>Get Floor Plan Details</button>
+          <button className="btn-dark" onClick={openModal}>See the Floor Plans</button>
         </div>
 
       </div>

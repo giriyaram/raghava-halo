@@ -2,14 +2,14 @@
 import { useEffect, useRef } from 'react'
 
 const locations = [
-  { icon: '🎓', place: 'CHIREC International School', type: 'K-12 Education', dist: '3 min', barW: '10%' },
-  { icon: '📐', place: 'ISB Hyderabad', type: 'Business School', dist: '12 min', barW: '38%' },
-  { icon: '🛍️', place: 'AMB Cinemas & Mall', type: 'Entertainment & Retail', dist: '13 min', barW: '42%' },
-  { icon: '🏥', place: 'Apollo Hospital', type: 'Healthcare', dist: '15 min', barW: '50%' },
-  { icon: '💼', place: 'Financial District', type: 'IT & Business Hub', dist: '15 min', barW: '50%' },
-  { icon: '🖥️', place: 'Gachibowli', type: 'Tech Corridor', dist: '15 min', barW: '50%' },
-  { icon: '🛣️', place: 'ORR Access Point', type: 'Outer Ring Road', dist: '20 min', barW: '64%' },
-  { icon: '🏙️', place: 'Hitech City', type: 'IT Hub', dist: '25 min', barW: '80%' },
+  { icon: '🎓', place: 'University of Hyderabad (HCU)', type: 'Green campus & landmark', dist: '5 min', barW: '18%' },
+  { icon: '🏫', place: 'CHIREC International School', type: 'K-12 Education', dist: '8 min', barW: '28%' },
+  { icon: '🛍️', place: 'AMB Cinemas & Mall', type: 'Entertainment & Retail', dist: '10 min', barW: '36%' },
+  { icon: '📐', place: 'ISB Hyderabad', type: 'Business School', dist: '12 min', barW: '42%' },
+  { icon: '🖥️', place: 'Gachibowli', type: 'Tech Corridor', dist: '12 min', barW: '42%' },
+  { icon: '💼', place: 'Financial District', type: 'IT & Business Hub', dist: '15 min', barW: '52%' },
+  { icon: '🏥', place: 'Continental & Care Hospitals', type: 'Healthcare', dist: '15 min', barW: '52%' },
+  { icon: '🏙️', place: 'HITEC City', type: 'IT Hub', dist: '20 min', barW: '68%' },
 ]
 
 export default function Location() {
@@ -39,11 +39,12 @@ export default function Location() {
       <div className="container">
         <div className="section-label">Location</div>
         <h2 className="section-h2" id="location-h2">
-          Kondapur — The Neighbourhood<br />That Has <em>Already Arrived</em>
+          Kondapur, near HCU —<br />the address that has <em>already arrived.</em>
         </h2>
         <p className="section-lead">
-          You are not betting on future development. Kondapur is fully formed — schools, hospitals,
-          malls, restaurants, and road connectivity are already in place. This project sits at the centre of it.
+          You&apos;re not betting on future development. Set in Kondapur beside the green expanse of
+          the University of Hyderabad, Raghava Halo puts schools, hospitals, malls and the whole
+          Gachibowli–Financial District tech belt within an easy drive.
         </p>
         <div className="location-grid">
           {/* Animated map card */}
@@ -77,8 +78,8 @@ export default function Location() {
               { top: '33%', left: '30%', delay: '1.2s', label: 'AMB Mall' },
               { top: '29%', left: '64%', delay: '1.4s', label: 'CHIREC' },
               { top: '57%', left: '76%', delay: '1.6s', label: 'Financial District' },
-              { top: '60%', left: '20%', delay: '1.8s', label: 'Apollo Hospital' },
-              { top: '74%', left: '74%', delay: '2s', label: 'Hitech City' },
+              { top: '60%', left: '20%', delay: '1.8s', label: 'HCU Campus' },
+              { top: '74%', left: '74%', delay: '2s', label: 'HITEC City' },
               { top: '20%', left: '26%', delay: '2.2s', label: 'ISB' },
             ].map((lm) => (
               <div key={lm.label} className="loc-landmark" style={{ top: lm.top, left: lm.left, animationDelay: lm.delay }} aria-hidden="true">
@@ -92,7 +93,7 @@ export default function Location() {
                 <div className="loc-pin-ring loc-pin-ring2" />
                 <div className="loc-pin-dot" />
               </div>
-              <div className="loc-pin-label" style={{ position: 'relative' }}>New Launch · Kondapur</div>
+              <div className="loc-pin-label" style={{ position: 'relative' }}>Raghava Halo · Kondapur</div>
             </div>
             <div className="loc-map-bottom" aria-hidden="true">
               <div className="loc-map-name">Kondapur, Hyderabad</div>

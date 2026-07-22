@@ -6,9 +6,9 @@ import Modal from '@/components/Modal'
 import FloatingButtons from '@/components/FloatingButtons'
 
 export const metadata: Metadata = {
-  title: 'Blog & Insights | Halo by Raghava',
+  title: 'Journal | Raghava Halo, Kondapur',
   description:
-    'Practical guides on buying premium apartments in Kondapur, Hyderabad — high-rise living, vastu, financial district proximity, and what to look for in a new launch project.',
+    'Practical guides to buying a 3 BHK home in Kondapur, Hyderabad — high-rise living, floor-plan loading, Vastu, HCU-belt connectivity, and what to look for in a RERA-approved launch like Raghava Halo.',
   alternates: { canonical: 'https://raghavakondapur.com/blog' },
 }
 

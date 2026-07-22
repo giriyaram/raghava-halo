@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: post.date,
     author: { '@type': 'Organization', name: 'Raghava Group' },
-    publisher: { '@type': 'Organization', name: 'Halo by Raghava', url: 'https://raghavakondapur.com' },
+    publisher: { '@type': 'Organization', name: 'Raghava Halo', url: 'https://raghavakondapur.com' },
     keywords: post.tags.join(', '),
   }
 
@@ -80,10 +80,10 @@ export default async function BlogPostPage({ params }: Props) {
           {/* CTA */}
           <div style={{ marginTop: '64px', background: 'var(--dark)', borderRadius: '4px', padding: '40px', textAlign: 'center' }}>
             <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', fontWeight: 500, color: 'var(--white)', marginBottom: '12px' }}>
-              Interested in Halo by Raghava?
+              Interested in Raghava Halo?
             </div>
             <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '24px', fontSize: '0.9375rem' }}>
-              52-floor high-rise in Kondapur. 3 BHK from ₹1.6 Cr. Vastu-aligned. Stilt-level amenities.
+              RERA-approved 52-floor high-rise in Kondapur, near HCU. 3 BHK from ₹1.6 Cr, with a 90,000 sft wellness clubhouse.
             </p>
             <Link href="/#contact" className="btn-primary">
               Enquire Now
@@ -92,7 +92,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div style={{ marginTop: '48px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/blog" style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>← All Articles</Link>
-            <Link href="/" style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>Halo Homepage →</Link>
+            <Link href="/" style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>Raghava Halo Homepage →</Link>
           </div>
         </div>
       </main>

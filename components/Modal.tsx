@@ -37,7 +37,7 @@ export default function Modal() {
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: n, phone: p, email: em, interest, source: 'Halo by Raghava Website' }),
+      body: JSON.stringify({ name: n, phone: p, email: em, interest, source: 'Raghava Halo Website' }),
     }).catch(() => {})
     setTimeout(() => { closeModal(); router.push('/thank-you') }, 400)
   }
@@ -67,8 +67,8 @@ export default function Modal() {
           </div>
         ) : (
           <>
-            <h3 id="modal-title">Get the Full Picture</h3>
-            <p>Floor plans, pricing, and site visit slots — all in one conversation.</p>
+            <h3 id="modal-title">Enquire about Raghava Halo</h3>
+            <p>Floor plans, launch pricing and site-visit slots — all in one conversation.</p>
             <form onSubmit={handleSubmit} noValidate>
               <div className="form-group">
                 <label htmlFor="m-name">Full Name *</label>
@@ -85,11 +85,11 @@ export default function Modal() {
               <div className="form-group">
                 <label htmlFor="m-interest">I&apos;m interested in</label>
                 <select id="m-interest" name="interest">
-                  <option value="">Select residence type</option>
-                  <option>3 BHK Comfort (~1800 sft)</option>
-                  <option>3 BHK Premium (~2100 sft)</option>
-                  <option>Tower 3 Corner 3 BHK (~2500 sft)</option>
-                  <option>Not Sure Yet — Show Me All Options</option>
+                  <option value="">Select a residence</option>
+                  <option>The Essential — 3 BHK (~1,830 sft)</option>
+                  <option>The Signature — 3 BHK (~2,275 sft)</option>
+                  <option>The Sky Home — 3 BHK (~2,455 sft)</option>
+                  <option>Not sure yet — show me everything</option>
                 </select>
               </div>
               <button type="submit" className="form-submit">Send My Enquiry</button>

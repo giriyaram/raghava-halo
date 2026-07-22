@@ -6,30 +6,32 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
+            <div className="brand-name">Raghava <span>Halo</span></div>
             <p>
-              An upcoming premium high-rise residential project. 52 floors. 3 towers.
-              1,000+ thoughtfully planned 3 BHK homes in Kondapur, Hyderabad.
+              A RERA-approved high-rise community in Kondapur, Hyderabad, near HCU. Three towers,
+              52 floors, and 1,000+ thoughtfully planned 3 BHK homes — crowned by the Halo.
             </p>
           </div>
           <div className="footer-col">
             <h4>Explore</h4>
             <ul role="list">
-              <li><a href="#positioning">Overview</a></li>
+              <li><a href="#why">Overview</a></li>
+              <li><a href="#architecture">Architecture</a></li>
               <li><a href="#residences">Residences</a></li>
-              <li><a href="#tower3">Tower 3</a></li>
+              <li><a href="#floor-plans">Floor Plans</a></li>
               <li><a href="#amenities">Amenities</a></li>
               <li><a href="#location">Location</a></li>
-              <li><Link href="/blog">Blog &amp; Insights</Link></li>
+              <li><Link href="/blog">Journal</Link></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Contact</h4>
+            <h4>Enquire</h4>
             <ul role="list">
-              <li><a href="#contact">Enquire Now</a></li>
-              <li><a href="https://wa.me/919000139976" target="_blank" rel="noopener">WhatsApp</a></li>
-              <li><a href="#contact">Request Site Visit</a></li>
-              <li><a href="#contact">Brochure Download</a></li>
+              <li><a href="#contact">Book a Site Visit</a></li>
+              <li><a href="#contact">Request Floor Plans</a></li>
+              <li><a href="https://wa.me/919000139976" target="_blank" rel="noopener">WhatsApp Us</a></li>
+              <li><a href="tel:+919000139976">+91 90001 39976</a></li>
               <li><a href="#contact">NRI Buyers</a></li>
             </ul>
           </div>
@@ -38,18 +40,18 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-links">
             <Link href="/privacy-policy">Privacy Policy</Link>
-            <a href="#">Terms of Use</a>
+            <Link href="/blog">Journal</Link>
             <Link href="/sitemap.xml">Sitemap</Link>
           </div>
+          <p>© {new Date().getFullYear()} Raghava Halo, Kondapur · Marketed by Realvision Reality Consultancy</p>
         </div>
         <p className="footer-disclaimer">
-          This is a pre-launch marketing communication for an upcoming residential project in Kondapur, Hyderabad,
-          by the developer. All details including specifications, pricing, floor plans, amenities, and timelines
-          are indicative and subject to change without prior notice. RERA registration is in process and details
-          will be updated shortly. Renderings shown are artistic impressions and may not accurately reflect the
-          final product. Please verify all details with our sales team before making any investment decision.
-          This communication does not constitute an offer or invitation to purchase. The developer is not
-          responsible for decisions made solely on the basis of marketing materials.
+          This is a marketing communication for Raghava Halo, a residential project in Kondapur, Hyderabad.
+          The project is RERA approved; the registration number and approved documents are available on request.
+          Images shown are architectural renders and artistic impressions and may differ from the final built
+          product. All specifications, pricing, floor plans, amenities and timelines are indicative and subject
+          to change per the RERA-registered plans. Please verify all details with our sales team before making
+          any purchase decision. This communication does not constitute an offer or a legally binding contract.
         </p>
       </div>
     </footer>

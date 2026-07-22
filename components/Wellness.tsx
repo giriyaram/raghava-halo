@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useModal } from '@/lib/modal-context'
 
 const RltIcon = () => (
@@ -83,14 +84,26 @@ export default function Wellness() {
         <div className="wellness-header">
           <div className="wellness-label">Wellness &amp; Recovery</div>
           <h2 className="wellness-h2" id="wellness-h2">
-            Most Amenities Are Built for Entertainment.<br />
-            <em>These Were Built for Recovery.</em>
+            Most amenities are built to entertain.<br />
+            <em>These were built to restore you.</em>
           </h2>
           <p className="wellness-lead">
-            Four evidence-backed protocols designed for the demands of modern living — not a spa menu,
-            but a genuine investment in how you perform, recover, and age inside your own building.
+            Four evidence-backed recovery protocols, alongside a rooftop yoga deck and landscaped
+            gardens — not a spa menu, but a genuine investment in how you perform, recover, and age
+            inside your own building.
           </p>
         </div>
+
+        <figure className="wellness-figure">
+          <Image
+            src="/renders/amenity-yoga.webp"
+            alt="Raghava Halo — rooftop yoga and meditation deck under a green pergola at sunrise"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1100px"
+            className="wellness-figure-img"
+          />
+          <figcaption className="wellness-figure-cap">The rooftop yoga &amp; meditation deck</figcaption>
+        </figure>
 
         <div className="wellness-grid" role="list">
           {protocols.map(({ id, Icon, name, tagline, body }) => (
@@ -107,11 +120,11 @@ export default function Wellness() {
 
         <div className="wellness-footer">
           <p className="wellness-footer-copy">
-            Not a brochure feature. A commitment to how residents actually feel inside their home —
+            Not a brochure feature. A commitment to how you actually feel inside Raghava Halo —
             day after day, year after year.
           </p>
           <button className="btn-outline" onClick={openModal}>
-            Enquire About Wellness Facilities
+            Enquire About the Wellness Suite
           </button>
         </div>
       </div>

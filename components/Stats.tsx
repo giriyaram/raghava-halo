@@ -4,14 +4,14 @@ import { useEffect, useRef, useState } from 'react'
 interface StatItem { number?: number; suffix?: string; label: string; prefix?: string; raw?: string }
 
 const stats: StatItem[] = [
-  { number: 52, suffix: '', label: 'Floors' },
   { number: 3, suffix: '', label: 'Towers' },
-  { raw: '5.1 Acres', label: 'Project Area' },
+  { number: 52, suffix: '', label: 'Floors' },
+  { raw: '5.5 Acres', label: 'Land Parcel' },
   { number: 1000, suffix: '+', label: 'Homes' },
-  { raw: '1,50,000 sft', label: 'Clubhouse + Stilt Amenities' },
-  { number: 1800, suffix: '–2500 sft', label: 'Residence Sizes' },
+  { raw: '90,000 sft', label: 'Wellness Clubhouse' },
+  { number: 1800, suffix: '–2,500 sft', label: 'Home Sizes' },
   { raw: '₹1.6 Cr', label: 'Starting Price' },
-  { raw: '1:1', label: 'Ratio of Lifts' },
+  { raw: '3 BHK', label: 'Only Configuration' },
 ]
 
 function useCounter(target: number, started: boolean) {
@@ -73,7 +73,7 @@ export default function Stats() {
       <div className="container">
         <div className="section-label">By the Numbers</div>
         <h2 className="section-h2" id="stats-h2">
-          A Project Built at Scale.<br /><em>Planned with Precision.</em>
+          Built at scale.<br /><em>Planned to the square foot.</em>
         </h2>
         <div className="stats-grid" role="list">
           {stats.map((s) => <StatCard key={s.label} stat={s} started={started} />)}

@@ -5,40 +5,43 @@ import { useModal } from '@/lib/modal-context'
 export default function Positioning() {
   const { openModal } = useModal()
   return (
-    <section id="positioning" aria-labelledby="positioning-h2">
+    <section id="why" aria-labelledby="why-h2">
       <div className="container">
         <div className="positioning-grid">
           <div>
-            <div className="section-label">Why This Project</div>
-            <h2 className="section-h2" id="positioning-h2">
-              Vertical Living,<br />Reimagined for the Way <em>You Actually Live</em>
+            <div className="section-label">Why Raghava Halo</div>
+            <h2 className="section-h2" id="why-h2">
+              Luxury isn&apos;t the chandelier<br />in the lobby. It&apos;s a home that{' '}
+              <em>works — every single day.</em>
             </h2>
             <p className="section-lead">
-              Most high-rises are designed for the brochure. This one is designed for Tuesday morning.
-              For the school run, the late work call, the weekend family lunch.
+              Anyone can add marble and gold leaf. Fewer builders obsess over the things you
+              actually feel at 8am on a Tuesday — the light in your kitchen, the wait for a lift,
+              the width of the balcony you drink your coffee on.
             </p>
             <p className="section-lead" style={{ marginTop: '16px' }}>
-              Every floor plan, every lift bank, every corridor — planned so that 1,000 families
-              don&apos;t feel like 1,000 families.
+              Raghava Halo was designed the other way around. We started with how you live, then
+              built the architecture to serve it. The result is a home that feels effortless long
+              after the launch-day shine has faded.
             </p>
             <div style={{ marginTop: '36px', display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-              <button className="btn-dark" onClick={openModal}>Get Floor Plans</button>
-              <a href="#residences" className="btn-ghost">See Residences</a>
+              <button className="btn-dark" onClick={openModal}>Request the Brochure</button>
+              <a href="#residences" className="btn-ghost">See the Residences</a>
             </div>
           </div>
-          <div className="positioning-visual" role="img" aria-label="Low-angle view of premium high-rise towers in Kondapur">
+          <div className="positioning-visual" role="img" aria-label="Raghava Halo towers at golden hour in Kondapur, Hyderabad">
             <Image
-              src="/images/Low-angle.webp"
-              alt="Halo by Raghava — low-angle view of the high-rise towers in Kondapur, Hyderabad"
+              src="/renders/towers-day.webp"
+              alt="Raghava Halo — sculptural tower crowns with wave-form sky terraces at golden hour, Kondapur"
               className="positioning-visual-img"
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
             />
             <div className="positioning-visual-overlay" aria-hidden="true" />
             <div className="positioning-visual-inner">
-              <div className="positioning-tag">Pre-Launch — Enquiries Open</div>
+              <div className="positioning-tag">RERA Approved · Now Launching</div>
               <blockquote className="positioning-quote">
-                &ldquo;Thoughtful planning creates better everyday living.&rdquo;
+                &ldquo;Designed for the way you actually live — not just the way it photographs.&rdquo;
               </blockquote>
             </div>
           </div>

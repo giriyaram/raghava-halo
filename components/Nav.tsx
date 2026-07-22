@@ -20,17 +20,20 @@ export default function Nav() {
     <>
       <nav id="nav" className={scrolled ? 'scrolled' : ''} role="navigation" aria-label="Main navigation">
         <div className="nav-inner">
-          <Link href="/" className="nav-logo" aria-label="Homepage" />
+          <Link href="/" className="nav-logo" aria-label="Raghava Halo — homepage">
+            <span className="nav-logo-mark" aria-hidden="true" />
+            Raghava <em>Halo</em>
+          </Link>
           <ul className="nav-links" role="list">
-            <li><a href="#positioning">Overview</a></li>
+            <li><a href="#why">Overview</a></li>
+            <li><a href="#architecture">Architecture</a></li>
             <li><a href="#residences">Residences</a></li>
-            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#wellness">Wellness</a></li>
             <li><a href="#location">Location</a></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><Link href="/blog">Journal</Link></li>
           </ul>
-          <button className="nav-cta" onClick={openModal} aria-label="Enquire about this project">
-            Enquire Now
+          <button className="nav-cta" onClick={openModal} aria-label="Book a site visit at Raghava Halo">
+            Book a Site Visit
           </button>
           <button
             className={`hamburger${menuOpen ? ' open' : ''}`}
@@ -46,15 +49,17 @@ export default function Nav() {
 
       <div id="mobile-menu" className={menuOpen ? 'open' : ''} role="dialog" aria-label="Navigation menu">
         <ul role="list">
-          <li><a href="#positioning" onClick={closeMenu}>Overview</a></li>
-          <li><a href="#residences" onClick={closeMenu}>Residences</a></li>
+          <li><a href="#why" onClick={closeMenu}>Overview</a></li>
+          <li><a href="#architecture" onClick={closeMenu}>Architecture</a></li>
+          <li><a href="#residences" onClick={closeMenu}>Residences &amp; Floor Plans</a></li>
+          <li><a href="#wellness" onClick={closeMenu}>Wellness</a></li>
           <li><a href="#amenities" onClick={closeMenu}>Amenities</a></li>
           <li><a href="#location" onClick={closeMenu}>Location</a></li>
-          <li><Link href="/blog" onClick={closeMenu}>Blog &amp; Insights</Link></li>
+          <li><Link href="/blog" onClick={closeMenu}>Journal</Link></li>
           <li><a href="#faq" onClick={closeMenu}>FAQ</a></li>
         </ul>
         <button className="mobile-cta" onClick={() => { closeMenu(); openModal() }}>
-          Enquire Now
+          Book a Site Visit
         </button>
       </div>
     </>
