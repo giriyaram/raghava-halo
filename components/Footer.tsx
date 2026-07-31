@@ -31,8 +31,8 @@ export default function Footer() {
             <ul role="list">
               <li><a href="#contact">Book a Site Visit</a></li>
               <li><a href="#contact">Request Floor Plans</a></li>
-              <li><a href="https://wa.me/919000139976" target="_blank" rel="noopener">WhatsApp Us</a></li>
-              <li><a href="tel:+919000139976">+91 90001 39976</a></li>
+              <li><a href="https://wa.me/919849019238" target="_blank" rel="noopener">WhatsApp Us</a></li>
+              <li><a href="tel:+919849019238">+91 98490 19238</a></li>
               <li><a href="#contact">NRI Buyers</a></li>
             </ul>
           </div>

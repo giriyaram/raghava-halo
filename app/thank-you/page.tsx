@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 // Metadata can't be exported from a 'use client' component,
 // so we set it via a separate metadata export pattern — handled below via head tags
 
-const WA = 'https://wa.me/919000139976?text=Hi%2C+I+just+enquired+about+Raghava+Halo+in+Kondapur.+Looking+forward+to+learning+more.'
+const WA = 'https://wa.me/919849019238?text=Hi%2C+I+just+enquired+about+Raghava+Halo+in+Kondapur.+Looking+forward+to+learning+more.'
 
 const steps = [
   {
