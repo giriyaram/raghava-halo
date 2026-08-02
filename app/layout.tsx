@@ -20,7 +20,7 @@ const inter = Inter({
 })
 
 const SITE_URL = 'https://raghavakondapur.com'
-const OG_IMAGE = `${SITE_URL}/renders/community-evening.webp`
+const OG_IMAGE = `${SITE_URL}/renders-towers/clubhouse-front-night.webp`
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Raghava Halo — 3 BHK High-Rise in Kondapur, Hyderabad',
-    description: 'RERA-approved. 3 BHK from ₹1.6 Cr. Near HCU, Kondapur. Now launching.',
+    description: 'RERA-approved. 3 BHK from ₹1.6 Cr. Near HCU, Kondapur. Now open.',
     images: [OG_IMAGE],
   },
   alternates: {
@@ -100,7 +100,7 @@ const jsonLd = {
       alternateName: ['Halo by Raghava', 'Raghava Halo Kondapur', 'Halo Kondapur', 'Raghava Kondapur'],
       description: 'Raghava Halo is a RERA-approved 3-tower, 52-floor high-rise in Kondapur, Hyderabad, near HCU. Thoughtfully planned 3 BHK homes from 1,800 to 2,500 sft starting at ₹1.6 Crore, with lower loading, larger balconies, and a 90,000 sft wellness clubhouse.',
       url: 'https://raghavakondapur.com',
-      image: 'https://raghavakondapur.com/renders/community-evening.webp',
+      image: 'https://raghavakondapur.com/renders-towers/clubhouse-front-night.webp',
       numberOfRooms: '3',
       floorSize: { '@type': 'QuantitativeValue', minValue: 1800, maxValue: 2500, unitText: 'SQF' },
       numberOfBathroomsTotal: 3,
@@ -143,7 +143,7 @@ const jsonLd = {
       name: 'Raghava Halo — Sales Gallery',
       url: 'https://raghavakondapur.com',
       telephone: '+91-9849019238',
-      image: 'https://raghavakondapur.com/renders/clubhouse-entrance.webp',
+      image: 'https://raghavakondapur.com/renders-towers/clubhouse-front-night.webp',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Kondapur',

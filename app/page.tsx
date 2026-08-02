@@ -11,6 +11,7 @@ import Residences from '@/components/Residences'
 import FloorPlans from '@/components/FloorPlans'
 import Arrival from '@/components/Arrival'
 import Wellness from '@/components/Wellness'
+import KidsLab from '@/components/KidsLab'
 import Amenities from '@/components/Amenities'
 import Gallery from '@/components/Gallery'
 import Location from '@/components/Location'
@@ -41,6 +42,7 @@ export default function HomePage() {
         <FloorPlans />
         <Arrival />
         <Wellness />
+        <KidsLab />
         <Amenities />
         <Gallery />
         <Location />

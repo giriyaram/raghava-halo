@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section id="hero" aria-labelledby="hero-h1">
       <Image
-        src="/renders/community-evening.webp"
-        alt="Raghava Halo — three high-rise towers at dusk in Kondapur, Hyderabad, crowned by the signature Halo"
+        src="/renders-towers/towers-lookup-dusk.webp"
+        alt="Raghava Halo — three high-rise towers rising to the illuminated Halo and Club Halo at dusk, Kondapur, Hyderabad"
         className="hero-img"
         fill
         priority
@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="hero-overlay-top" aria-hidden="true" />
       <div className="container">
         <div className="hero-content">
-          <div className="hero-eyebrow">RERA Approved · Near HCU, Kondapur · Now Launching</div>
+          <div className="hero-eyebrow">RERA Approved · Now Open · Near HCU, Kondapur</div>
           <h1 className="hero-h1" id="hero-h1">
             Raghava <em>Halo</em>
           </h1>

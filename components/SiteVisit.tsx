@@ -10,7 +10,7 @@ export default function SiteVisit() {
           <div className="sv-band-glow" aria-hidden="true" />
           <div className="sv-band-inner">
             <div className="sv-band-text">
-              <div className="sv-band-eyebrow">Now Launching · RERA Approved</div>
+              <div className="sv-band-eyebrow">Now Open · RERA Approved</div>
               <h2 className="sv-band-h2" id="site-visit-h2">
                 See it in person, before the best homes are spoken for.
               </h2>

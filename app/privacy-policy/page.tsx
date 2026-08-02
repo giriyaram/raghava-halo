@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Premium Residences, Kondapur',
-  description: 'Privacy Policy for this upcoming residential project in Kondapur — how we collect, use, and protect your personal information.',
+  description: 'Privacy Policy for Raghava Halo, our residential project in Kondapur — how we collect, use, and protect your personal information.',
   alternates: { canonical: 'https://raghavakondapur.com/privacy-policy' },
   robots: { index: false, follow: false },
 }
@@ -102,7 +102,7 @@ To exercise any of these rights, please contact us at the details provided below
     content: `If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:
 
 **Realvision Reality Consultancy**
-Authorised Channel Partner — Upcoming Project, Kondapur
+Authorised Channel Partner — Raghava Halo, Kondapur
 RERA Agent No: A01100003800
 Hyderabad, Telangana
 📞 +91 98490 19238
@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
             color: 'var(--text)',
           }}>
             Realvision Reality Consultancy (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) is an authorised channel
-            partner firm operating this website on behalf of an upcoming residential project in Kondapur (&ldquo;the Project&rdquo;),
+            partner firm operating this website on behalf of Raghava Halo, a residential project in Kondapur (&ldquo;the Project&rdquo;),
             developed by the project developer. This Privacy Policy explains how we collect, use, store, and
             protect the personal information you provide when enquiring about the project through
             this website. By submitting an enquiry, you agree to the terms of this policy.

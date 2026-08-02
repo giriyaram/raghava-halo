@@ -39,7 +39,7 @@ export default function Positioning() {
             />
             <div className="positioning-visual-overlay" aria-hidden="true" />
             <div className="positioning-visual-inner">
-              <div className="positioning-tag">RERA Approved · Now Launching</div>
+              <div className="positioning-tag">RERA Approved · Homes Now Selling</div>
               <blockquote className="positioning-quote">
                 &ldquo;Designed for the way you actually live — not just the way it photographs.&rdquo;
               </blockquote>

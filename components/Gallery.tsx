@@ -1,12 +1,14 @@
 import Image from 'next/image'
 
 const shots = [
-  { img: '/renders/community-evening.webp', cap: 'Three towers at dusk', span: 'wide', alt: 'Raghava Halo — the three towers and clubhouse lit at dusk in Kondapur, Hyderabad' },
-  { img: '/renders/hero-tower-night.webp', cap: 'Balconies after dark', span: 'tall', alt: 'Raghava Halo — glowing curved balconies and sitouts on the tower façade at night' },
-  { img: '/renders/towers-day.webp', cap: 'Sculpted crowns', span: '', alt: 'Raghava Halo — wave-form sky terraces crowning the towers at golden hour' },
-  { img: '/renders/amenity-pathway.webp', cap: 'The landscaped podium', span: '', alt: 'Raghava Halo — sculptural timber landscape bridge and garden walk' },
-  { img: '/renders/clubhouse-entrance.webp', cap: 'Arrival beneath the Halo', span: 'wide', alt: 'Raghava Halo — grand clubhouse arrival with the illuminated Halo and fountain' },
-  { img: '/renders/towers-dusk.webp', cap: 'A skyline landmark', span: '', alt: 'Raghava Halo — towers rising to the illuminated Halo, viewed from below at dusk' },
+  { img: '/renders-towers/clubhouse-front-night.webp', cap: 'Arrival beneath the Halo', span: 'wide', alt: 'Raghava Halo — Club Halo and the illuminated Halo ring at night' },
+  { img: '/gallery/grand-lobby.webp', cap: 'The grand lobby', span: 'tall', alt: 'Raghava Halo — double-height grand lobby with marble and a sculptural mezzanine' },
+  { img: '/renders-towers/tower-crowns-sunset.webp', cap: 'Sky-garden crowns', span: '', alt: 'Raghava Halo — sculpted tower crowns with rooftop sky gardens at sunset' },
+  { img: '/gallery/rooftop-yoga-deck.webp', cap: 'Rooftop wellness', span: '', alt: 'Raghava Halo — rooftop yoga and meditation deck' },
+  { img: '/gallery/master-bedroom.webp', cap: 'Inside a Halo home', span: 'tall', alt: 'Raghava Halo — a light-filled master bedroom interior' },
+  { img: '/renders-towers/podium-wave-facade-sunset.webp', cap: 'The wave podium', span: 'wide', alt: 'Raghava Halo — the signature timber wave-form podium façade at sunset' },
+  { img: '/gallery/family-living-room.webp', cap: 'Room to gather', span: '', alt: 'Raghava Halo — an open, family living room interior' },
+  { img: '/renders-towers/towers-full-dusk-symmetric.webp', cap: 'A skyline landmark', span: '', alt: 'Raghava Halo — the three towers and Club Halo lit symmetrically at dusk' },
 ]
 
 export default function Gallery() {
@@ -18,8 +20,8 @@ export default function Gallery() {
           Official renders.<br /><em>The home you&apos;ve been picturing.</em>
         </h2>
         <p className="section-lead">
-          Architectural renders of Raghava Halo — the towers, the arrival, the balconies, the
-          gardens. The real thing is rising in Kondapur. Come see it in person.
+          Official renders of Raghava Halo — the towers and the arrival, the lobby and the homes,
+          the gardens and the sky. It&apos;s rising now in Kondapur. Come see it in person.
         </p>
       </div>
       <div className="gallery-grid">

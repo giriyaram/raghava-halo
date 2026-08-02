@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 const features = [
-  { img: '/renders/amenity-tennis.webp', name: 'Tennis Courts', note: 'Full-size courts framed by mature landscaping' },
-  { img: '/renders/amenity-golf.webp', name: 'Putting Green', note: 'A rooftop green for a slow Sunday round' },
-  { img: '/renders/amenity-kids-play.webp', name: "Kids' Adventure Play", note: 'A world of their own, safe and in view' },
-  { img: '/renders/amenity-pathway.webp', name: 'Garden Walks', note: 'Sculpted trails that thread the whole community' },
+  { img: '/gallery/rooftop-putting-green.webp', name: 'Rooftop Putting Green', note: 'A slow Sunday round, high above the city' },
+  { img: '/gallery/tennis-court.webp', name: 'Tennis Courts', note: 'Full-size courts framed by mature landscaping' },
+  { img: '/gallery/sports-courts-aerial.webp', name: 'The Sports Precinct', note: 'Courts and greens laid across the podium' },
+  { img: '/gallery/cafe-pickleball.webp', name: 'Café & Pickleball', note: 'Where a match ends and the conversation begins' },
 ]
 
 const more = [

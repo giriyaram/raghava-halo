@@ -7,11 +7,12 @@ export default function Arrival() {
   return (
     <section id="arrival" aria-labelledby="arrival-h2">
       <Image
-        src="/renders/clubhouse-entrance.webp"
-        alt="Raghava Halo grand arrival — the illuminated Halo above the clubhouse and forecourt fountain, Kondapur"
+        src="/renders-towers/clubhouse-front-night.webp"
+        alt="Raghava Halo grand arrival at night — Club Halo beneath the illuminated Halo ring, with the forecourt fountain, Kondapur"
         className="arrival-img"
         fill
         sizes="100vw"
+        priority={false}
       />
       <div className="arrival-scrim" aria-hidden="true" />
       <div className="container">

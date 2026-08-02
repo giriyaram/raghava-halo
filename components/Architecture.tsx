@@ -43,14 +43,14 @@ export default function Architecture() {
               Request the Design Brochure
             </button>
           </div>
-          <div className="tower3-img-panel" role="img" aria-label="Raghava Halo towers viewed from below at dusk">
+          <div className="tower3-img-panel" role="img" aria-label="Raghava Halo tower crowns with rooftop sky gardens at sunset">
             <Image
-              src="/renders/towers-dusk.webp"
-              alt="Raghava Halo — three towers rising to an illuminated Halo sky terrace at dusk, Kondapur Hyderabad"
+              src="/renders-towers/tower-crowns-sunset.webp"
+              alt="Raghava Halo — sculpted tower crowns with rooftop sky gardens and the Raghava Halo signage at sunset, Kondapur Hyderabad"
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
               className="tower3-img"
-              style={{ objectPosition: 'center center' }}
+              style={{ objectPosition: 'center 34%' }}
             />
             <div className="tower3-img-overlay" aria-hidden="true" />
           </div>
