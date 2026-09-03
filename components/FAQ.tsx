@@ -7,6 +7,10 @@ const faqs = [
     a: 'Raghava Halo is a RERA-approved high-rise residential project in Kondapur, Hyderabad, near the University of Hyderabad (HCU). It spans 5.5 acres with 3 towers of 52 floors and over 1,000 homes — all thoughtfully planned 3 BHK residences of 1,800 to 2,500 sft, starting from ₹1.7 Cr.',
   },
   {
+    q: 'Is Raghava Halo ready to move in?',
+    a: 'No. Raghava Halo is an under-construction project. Possession is scheduled for June 2030. It is not a ready-to-move or immediate-possession property.',
+  },
+  {
     q: 'When is possession?',
     a: 'Raghava Halo is currently under construction, with possession scheduled for June 2030. Our team will share the tower-wise handover schedule and construction progress with every enquiry.',
   },
