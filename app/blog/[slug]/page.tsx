@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: Props) {
               Interested in Raghava Halo?
             </div>
             <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '24px', fontSize: '0.9375rem' }}>
-              RERA-approved 52-floor high-rise in Kondapur, near HCU. 3 BHK from ₹1.6 Cr, with a 90,000 sft wellness clubhouse.
+              RERA-approved 52-floor high-rise in Kondapur, near HCU. 3 BHK from ₹1.7 Cr, with over 3 lakh sft of community amenities.
             </p>
             <Link href="/#contact" className="btn-primary">
               Enquire Now

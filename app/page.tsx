@@ -3,6 +3,7 @@ import Nav from '@/components/Nav'
 import ScrollAnimations from '@/components/ScrollAnimations'
 import Hero from '@/components/Hero'
 import TrustBar from '@/components/TrustBar'
+import PossessionBand from '@/components/PossessionBand'
 import Positioning from '@/components/Positioning'
 import Stats from '@/components/Stats'
 import Architecture from '@/components/Architecture'
@@ -34,6 +35,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <TrustBar />
+        <PossessionBand />
         <Positioning />
         <Stats />
         <Architecture />

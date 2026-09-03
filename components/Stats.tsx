@@ -8,9 +8,9 @@ const stats: StatItem[] = [
   { number: 52, suffix: '', label: 'Floors' },
   { raw: '5.5 Acres', label: 'Land Parcel' },
   { number: 1000, suffix: '+', label: 'Homes' },
-  { raw: '90,000 sft', label: 'Wellness Clubhouse' },
+  { raw: '3 Lakh sft', label: 'Community Amenities' },
   { number: 1800, suffix: '–2,500 sft', label: 'Home Sizes' },
-  { raw: '₹1.6 Cr', label: 'Starting Price' },
+  { raw: '₹1.7 Cr*', label: 'Starting Price' },
   { raw: '3 BHK', label: 'Only Configuration' },
 ]
 

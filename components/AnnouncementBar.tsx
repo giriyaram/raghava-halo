@@ -11,6 +11,7 @@ export const ANNOUNCEMENT = {
   ctaLabel: 'Book Site Visit',
   groups: [
     [{ text: 'RERA Approved', accent: true }],
+    [{ text: 'Under Construction — ' }, { text: 'Possession June 2030', accent: true }],
     [{ text: 'EOI Pricing', accent: true }, { text: ' still available for a limited period' }],
     [{ text: 'Book before the price revises to ' }, { text: '₹8,500 / sq.ft', accent: true }],
   ],

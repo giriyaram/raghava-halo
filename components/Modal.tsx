@@ -92,6 +92,7 @@ export default function Modal() {
                   <option>Not sure yet — show me everything</option>
                 </select>
               </div>
+              <p className="form-note">Please note: this is an under-construction project. Possession is scheduled for <strong>June 2030</strong>.</p>
               <button type="submit" className="form-submit">Send My Enquiry</button>
               <p className="form-trust">No spam. No pressure calls. Your information stays private.</p>
             </form>

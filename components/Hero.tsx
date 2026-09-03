@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="hero-overlay-top" aria-hidden="true" />
       <div className="container">
         <div className="hero-content">
-          <div className="hero-eyebrow">RERA Approved · Now Open · Near HCU, Kondapur</div>
+          <div className="hero-eyebrow">RERA Approved · Bookings Open · Near HCU, Kondapur</div>
           <h1 className="hero-h1" id="hero-h1">
             Raghava <em>Halo</em>
           </h1>
@@ -42,9 +42,15 @@ export default function Hero() {
           <div className="hero-meta">
             <div className="hero-meta-item"><strong>3 BHK</strong><span>1,800–2,500 sft</span></div>
             <div className="hero-meta-divider" aria-hidden="true" />
-            <div className="hero-meta-item"><strong>From ₹1.6 Cr</strong><span>Launch pricing</span></div>
+            <div className="hero-meta-item"><strong>From ₹1.7 Cr*</strong><span>Starting price</span></div>
             <div className="hero-meta-divider" aria-hidden="true" />
             <div className="hero-meta-item"><strong>5.5 Acres</strong><span>Gated community</span></div>
+          </div>
+          <div className="hero-status" role="note">
+            <span className="hero-status-icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20h20M4 20V10l8-5 8 5v10M9 20v-5h6v5"/></svg>
+            </span>
+            <span><strong>Under Construction</strong> · Possession June 2030</span>
           </div>
         </div>
       </div>

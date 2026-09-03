@@ -22,12 +22,13 @@ export default function Arrival() {
             Every evening, you come home<br />beneath the <em>Halo.</em>
           </h2>
           <p className="arrival-sub">
-            A 90,000 sft wellness clubhouse anchors the community, crowned by the illuminated ring
-            that gives Raghava Halo its name. The forecourt, the water, the light — an arrival that
-            tells you, and everyone visiting, that you chose well.
+            A landmark wellness clubhouse anchors the community, crowned by the illuminated ring
+            that gives Raghava Halo its name — part of over 3 lakh sft of amenities across the
+            address. The forecourt, the water, the light — an arrival that tells you, and everyone
+            visiting, that you chose well.
           </p>
           <div className="arrival-stats">
-            <div className="arrival-stat"><strong>90,000 sft</strong><span>Wellness clubhouse</span></div>
+            <div className="arrival-stat"><strong>3 Lakh sft</strong><span>Community amenities</span></div>
             <div className="arrival-stat"><strong>5.5 acres</strong><span>Landscaped community</span></div>
             <div className="arrival-stat"><strong>Grand</strong><span>Drop-off &amp; forecourt</span></div>
           </div>

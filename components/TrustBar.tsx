@@ -7,7 +7,7 @@ export default function TrustBar() {
         <div className="trust-item"><strong>52</strong> Floors</div>
         <div className="trust-item"><strong>5.5</strong> Acres</div>
         <div className="trust-item"><strong>1000+</strong> Homes</div>
-        <div className="trust-item"><strong>90,000</strong> sft Wellness Clubhouse</div>
+        <div className="trust-item"><strong>3 Lakh</strong> sft of Amenities</div>
         <div className="trust-item"><strong>Near HCU</strong>, Kondapur</div>
       </div>
     </div>

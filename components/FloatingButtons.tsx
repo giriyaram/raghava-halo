@@ -18,8 +18,8 @@ export default function FloatingButtons() {
         </svg>
       </a>
       <div id="float-cta" role="complementary" aria-label="Mobile enquiry button">
-        <button onClick={openModal} aria-label="Enquire about available residences">
-          Enquire Now — Starting ₹1.6 Cr
+        <button onClick={openModal} aria-label="Enquire about Raghava Halo — under construction, possession June 2030">
+          Enquire — From ₹1.7 Cr* · Possession 2030
         </button>
       </div>
     </>

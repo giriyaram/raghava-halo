@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: '%s | Raghava Halo, Kondapur',
   },
   description:
-    'Raghava Halo is a RERA-approved 3-tower, 52-floor high-rise in Kondapur, Hyderabad, near HCU. Thoughtfully planned 3 BHK homes of 1,800–2,500 sft from ₹1.6 Cr, with lower loading, larger balconies and a 90,000 sft wellness clubhouse. Book a site visit.',
+    'Raghava Halo is a RERA-approved 3-tower, 52-floor high-rise in Kondapur, Hyderabad, near HCU. Thoughtfully planned 3 BHK homes of 1,800–2,500 sft from ₹1.7 Cr, with lower loading, larger balconies and over 3 lakh sft of community amenities. Book a site visit.',
   keywords: [
     'Raghava Halo',
     'Raghava Halo Kondapur',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Raghava Halo — Thoughtfully Planned 3 BHK Living in Kondapur',
     description:
-      'RERA-approved 3-tower, 52-floor high-rise near HCU, Kondapur. 3 BHK homes of 1,800–2,500 sft from ₹1.6 Cr with a 90,000 sft wellness clubhouse.',
+      'RERA-approved 3-tower, 52-floor high-rise near HCU, Kondapur. 3 BHK homes of 1,800–2,500 sft from ₹1.7 Cr with over 3 lakh sft of community amenities.',
     type: 'website',
     url: SITE_URL,
     siteName: 'Raghava Halo',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Raghava Halo — 3 BHK High-Rise in Kondapur, Hyderabad',
-    description: 'RERA-approved. 3 BHK from ₹1.6 Cr. Near HCU, Kondapur. Now open.',
+    description: 'RERA-approved, under construction. 3 BHK from ₹1.7 Cr. Near HCU, Kondapur. Possession June 2030.',
     images: [OG_IMAGE],
   },
   alternates: {
@@ -98,7 +98,7 @@ const jsonLd = {
       '@id': 'https://raghavakondapur.com/#project',
       name: 'Raghava Halo',
       alternateName: ['Halo by Raghava', 'Raghava Halo Kondapur', 'Halo Kondapur', 'Raghava Kondapur'],
-      description: 'Raghava Halo is a RERA-approved 3-tower, 52-floor high-rise in Kondapur, Hyderabad, near HCU. Thoughtfully planned 3 BHK homes from 1,800 to 2,500 sft starting at ₹1.6 Crore, with lower loading, larger balconies, and a 90,000 sft wellness clubhouse.',
+      description: 'Raghava Halo is a RERA-approved 3-tower, 52-floor high-rise in Kondapur, Hyderabad, near HCU. Thoughtfully planned 3 BHK homes from 1,800 to 2,500 sft starting at ₹1.7 Crore, with lower loading, larger balconies, and over 3 lakh sft of community amenities.',
       url: 'https://raghavakondapur.com',
       image: 'https://raghavakondapur.com/renders-towers/clubhouse-front-night.webp',
       numberOfRooms: '3',
@@ -118,7 +118,7 @@ const jsonLd = {
         longitude: '78.3625',
       },
       amenityFeature: [
-        { '@type': 'LocationFeatureSpecification', name: '90,000 sft Wellness Clubhouse', value: true },
+        { '@type': 'LocationFeatureSpecification', name: '3,00,000+ sft of Community Amenities', value: true },
         { '@type': 'LocationFeatureSpecification', name: 'Red Light Therapy', value: true },
         { '@type': 'LocationFeatureSpecification', name: 'Hyperbaric Oxygen Therapy (HBOT)', value: true },
         { '@type': 'LocationFeatureSpecification', name: 'Sauna', value: true },
@@ -131,9 +131,10 @@ const jsonLd = {
       offers: {
         '@type': 'Offer',
         priceCurrency: 'INR',
-        price: '16000000',
+        price: '17000000',
         priceValidUntil: '2026-12-31',
-        availability: 'https://schema.org/InStock',
+        availability: 'https://schema.org/PreOrder',
+        availabilityStarts: '2030-06-01',
         seller: { '@id': 'https://raghavakondapur.com/#organization' },
       },
     },

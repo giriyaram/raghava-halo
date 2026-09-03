@@ -49,6 +49,8 @@ export default function Footer() {
         <p className="footer-disclaimer">
           This is a marketing communication for Raghava Halo, a residential project in Kondapur, Hyderabad.
           The project is RERA approved under registration number P02400011015; approved documents are available on request.
+          <strong> Raghava Halo is an under-construction project, with possession scheduled for June 2030.</strong>{' '}
+          *Starting price is indicative, exclusive of applicable taxes, registration and other charges.
           Images shown are architectural renders and artistic impressions and may differ from the final built
           product. All specifications, pricing, floor plans, amenities and timelines are indicative and subject
           to change per the RERA-registered plans. Please verify all details with our sales team before making

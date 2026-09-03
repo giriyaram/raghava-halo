@@ -4,7 +4,11 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What is Raghava Halo?',
-    a: 'Raghava Halo is a RERA-approved high-rise residential project in Kondapur, Hyderabad, near the University of Hyderabad (HCU). It spans 5.5 acres with 3 towers of 52 floors and over 1,000 homes — all thoughtfully planned 3 BHK residences of 1,800 to 2,500 sft, starting from ₹1.6 Cr.',
+    a: 'Raghava Halo is a RERA-approved high-rise residential project in Kondapur, Hyderabad, near the University of Hyderabad (HCU). It spans 5.5 acres with 3 towers of 52 floors and over 1,000 homes — all thoughtfully planned 3 BHK residences of 1,800 to 2,500 sft, starting from ₹1.7 Cr.',
+  },
+  {
+    q: 'When is possession?',
+    a: 'Raghava Halo is currently under construction, with possession scheduled for June 2030. Our team will share the tower-wise handover schedule and construction progress with every enquiry.',
   },
   {
     q: 'Where exactly is Raghava Halo located?',
@@ -12,7 +16,7 @@ const faqs = [
   },
   {
     q: 'What sizes and prices are available?',
-    a: 'Every home is a 3 BHK, from about 1,830 sft to 2,455 sft across three layouts — The Essential (~1,830 sft from ₹1.6 Cr), The Signature (~2,275 sft), and The Sky Home (~2,455 sft). Pricing is indicative of the launch phase; contact our team for the current price list and payment plan.',
+    a: 'Every home is a 3 BHK, from about 1,830 sft to 2,455 sft across three layouts — The Essential (~1,830 sft from ₹1.7 Cr), The Signature (~2,275 sft), and The Sky Home (~2,455 sft). Pricing is indicative of the launch phase; contact our team for the current price list and payment plan.',
   },
   {
     q: 'Is Raghava Halo RERA approved?',
@@ -24,15 +28,11 @@ const faqs = [
   },
   {
     q: 'What amenities does Raghava Halo offer?',
-    a: 'A 90,000 sft wellness clubhouse anchors the community, alongside a lap pool, gym, rooftop yoga deck, tennis courts, a putting green, kids\' play zones, garden walks, co-working lounge, mini theatre and more. A dedicated wellness suite includes Red Light Therapy, Hyperbaric Oxygen Therapy (HBOT), a sauna and float therapy.',
+    a: 'Over 3 lakh sft of amenities span the community — a wellness clubhouse, lap pool, gym, rooftop yoga deck, tennis courts, a putting green, kids\' play zones, garden walks, co-working lounge, mini theatre and more. A dedicated wellness suite includes Red Light Therapy, Hyperbaric Oxygen Therapy (HBOT), a sauna and float therapy.',
   },
   {
     q: 'Does every apartment have balconies?',
     a: 'Yes. Every home includes two full balconies plus a dedicated sitout, and every master bedroom opens to its own private balcony. Balcony edges are curved for more usable outdoor width.',
-  },
-  {
-    q: 'When is possession?',
-    a: 'Construction is underway following RERA approval. Possession is targeted in line with the RERA-registered project schedule — our team will share the current handover timeline for each tower. Booking early gives you first pick of floors, views and launch-phase pricing.',
   },
   {
     q: 'Is Raghava Halo suitable for NRI buyers?',

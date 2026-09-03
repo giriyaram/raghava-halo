@@ -29,7 +29,7 @@ export default function Amenities() {
         <div className="amenities-lead">
           <div className="section-label">Amenities</div>
           <h2 className="section-h2" id="amenities-h2">
-            A 90,000 sft clubhouse.<br />And 5.5 acres of <em>reasons to stay in.</em>
+            3 lakh sft of amenities.<br />And 5.5 acres of <em>reasons to stay in.</em>
           </h2>
           <p className="section-lead">
             The things you&apos;ll use every day sit at the heart of the community — landscaped,

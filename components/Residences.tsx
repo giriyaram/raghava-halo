@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useModal } from '@/lib/modal-context'
 
 const cards = [
-  { type: '3 BHK', name: 'The Essential', size: '~1,830 sft · Towers 1–3', price: '₹1.6 Cr', badge: 'From', highlight: false },
+  { type: '3 BHK', name: 'The Essential', size: '~1,830 sft · Towers 1–3', price: '₹1.7 Cr', badge: 'From', highlight: false },
   { type: '3 BHK', name: 'The Signature', size: '~2,275 sft · Corner-facing', price: '₹1.9 Cr', badge: 'Most Requested', highlight: true },
   { type: '3 BHK', name: 'The Sky Home', size: '~2,455 sft · Higher floors', price: '₹2.2 Cr', badge: 'Wide Balcony', highlight: false },
 ]
