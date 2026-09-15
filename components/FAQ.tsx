@@ -4,7 +4,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What is Raghava Halo?',
-    a: 'Raghava Halo is a RERA-approved high-rise residential project in Kondapur, Hyderabad, near the University of Hyderabad (HCU). It spans 5.5 acres with 3 towers of 52 floors and over 1,000 homes — all thoughtfully planned 3 BHK residences of 1,800 to 2,500 sft, starting from ₹1.7 Cr.',
+    a: 'Raghava Halo is a RERA-approved high-rise residential project in Kondapur, Hyderabad, near the University of Hyderabad (HCU). It spans 5.5 acres with 3 towers of 52 floors and over 1,000 homes — all thoughtfully planned 3 BHK residences of 1,800 to 2,500 sft, starting from ₹1.6 Cr.',
   },
   {
     q: 'Is Raghava Halo ready to move in?',
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'What sizes and prices are available?',
-    a: 'Every home is a 3 BHK, from about 1,830 sft to 2,455 sft across three layouts — The Essential (~1,830 sft from ₹1.7 Cr), The Signature (~2,275 sft), and The Sky Home (~2,455 sft). Pricing is indicative of the launch phase; contact our team for the current price list and payment plan.',
+    a: 'Every home is a 3 BHK, from about 1,830 sft to 2,455 sft across three layouts — The Essential (~1,830 sft from ₹1.6 Cr), The Signature (~2,275 sft), and The Sky Home (~2,455 sft). Pricing is indicative of the launch phase; contact our team for the current price list and payment plan.',
   },
   {
     q: 'Is Raghava Halo RERA approved?',
