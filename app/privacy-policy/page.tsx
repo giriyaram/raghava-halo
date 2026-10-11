@@ -105,7 +105,7 @@ To exercise any of these rights, please contact us at the details provided below
 Authorised Channel Partner — Raghava Halo, Kondapur
 RERA Agent No: A01100003800
 Hyderabad, Telangana
-📞 +91 98490 19238
+📞 +91 70131 00492
 📧 office@realvision.team
 
 You may also reach us via WhatsApp at the number above.`,

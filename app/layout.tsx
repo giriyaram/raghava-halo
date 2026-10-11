@@ -80,7 +80,7 @@ const jsonLd = {
       description: 'Raghava Group is a Hyderabad-based real estate developer known for thoughtfully planned residential high-rises.',
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+91-9849019238',
+        telephone: '+91-7013100492',
         contactType: 'sales',
         availableLanguage: ['English', 'Telugu', 'Hindi'],
       },
@@ -143,7 +143,7 @@ const jsonLd = {
       '@id': 'https://raghavakondapur.com/#localbusiness',
       name: 'Raghava Halo — Sales Gallery',
       url: 'https://raghavakondapur.com',
-      telephone: '+91-9849019238',
+      telephone: '+91-7013100492',
       image: 'https://raghavakondapur.com/renders-towers/clubhouse-front-night.webp',
       address: {
         '@type': 'PostalAddress',
