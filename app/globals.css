@@ -51,7 +51,7 @@
   @media (max-width: 767px) { :root { --ann-h: 48px; } }
 
   .ann-marquee {
-    flex: 1; min-width: 0; overflow: hidden;
+    flex: 1; min-width: 0; overflow: hidden; cursor: pointer;
     -webkit-mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
     mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
   }

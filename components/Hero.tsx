@@ -31,8 +31,8 @@ export default function Hero() {
             every single day.
           </p>
           <div className="hero-ctas">
-            <button className="btn-primary" onClick={() => openModal('hero')} aria-label="Book a site visit at Raghava Halo">
-              Book a Site Visit
+            <button className="btn-primary" onClick={() => openModal('hero')} aria-label="Get the EOI price sheet for Raghava Halo">
+              Get the EOI Price Sheet
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
             <a className="btn-outline" href="#residences" aria-label="View 3 BHK floor plans">

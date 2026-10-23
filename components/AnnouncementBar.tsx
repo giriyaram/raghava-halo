@@ -45,7 +45,7 @@ export default function AnnouncementBar() {
 
   return (
     <div id="announcement-bar" role="region" aria-label="Launch announcement">
-      <div className="ann-marquee">
+      <div className="ann-marquee" onClick={() => openModal('ticker')}>
         <div className="ann-track">
           <Ticker />
           <Ticker hidden />
