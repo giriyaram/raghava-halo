@@ -15,7 +15,9 @@ const stats: StatItem[] = [
 ]
 
 function useCounter(target: number, started: boolean) {
-  const [value, setValue] = useState(0)
+  // Initial (and SSR) value is the real final number, never 0 — the
+  // count-up only replaces it client-side once IntersectionObserver fires.
+  const [value, setValue] = useState(target)
   useEffect(() => {
     if (!started) return
     let startTime: number | null = null
