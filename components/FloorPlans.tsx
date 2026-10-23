@@ -51,13 +51,25 @@ export default function FloorPlans() {
               className="fp-image"
               aria-hidden="true"
             />
-            <div className="fp-lock">
-              <div className="fp-lock-icon" aria-hidden="true">
+            <div
+              className="fp-lock"
+              onClick={() => openModal(`floorplan-tower-${active + 1}`)}
+            >
+              <span className="fp-tap-hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg>
+                Tap to unlock
+              </span>
+              <div className="fp-lock-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="11" width="16" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
               </div>
               <div className="fp-lock-title">{t.label} floor plan</div>
               <div className="fp-lock-sub">Get the full, dimensioned plate for {t.range} 3 BHK homes.</div>
-              <button className="btn-dark" onClick={() => openModal(`floorplan-tower-${active + 1}`)}>Unlock the Floor Plan</button>
+              <button
+                className="btn-dark"
+                onClick={(e) => { e.stopPropagation(); openModal(`floorplan-tower-${active + 1}`) }}
+              >
+                Unlock the Floor Plan
+              </button>
             </div>
           </div>
           <div className="fp-detail">
