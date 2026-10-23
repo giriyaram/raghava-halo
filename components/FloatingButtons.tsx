@@ -1,8 +1,24 @@
 'use client'
+import { useEffect, useState } from 'react'
 import { useModal } from '@/lib/modal-context'
 
 export default function FloatingButtons() {
-  const { openModal } = useModal()
+  const { open, openModal } = useModal()
+  const [contactInView, setContactInView] = useState(false)
+
+  useEffect(() => {
+    const contactEl = document.getElementById('contact')
+    if (!contactEl) return
+    const io = new IntersectionObserver(
+      ([entry]) => setContactInView(entry.isIntersecting),
+      { threshold: 0.1 }
+    )
+    io.observe(contactEl)
+    return () => io.disconnect()
+  }, [])
+
+  const hidden = open || contactInView
+
   return (
     <>
       <a
@@ -17,9 +33,19 @@ export default function FloatingButtons() {
           <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.855L0 24l6.328-1.51A11.931 11.931 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.368l-.358-.213-3.755.895.954-3.659-.234-.374A9.818 9.818 0 0112 2.182c5.424 0 9.818 4.394 9.818 9.818 0 5.425-4.394 9.818-9.818 9.818z" />
         </svg>
       </a>
-      <div id="float-cta" role="complementary" aria-label="Mobile enquiry button">
-        <button onClick={() => openModal('sticky-bar')} aria-label="Enquire about Raghava Halo — under construction, possession June 2030">
-          Enquire — From ₹1.8 Cr* · Possession 2030
+      <div
+        id="sticky-cta-bar"
+        className={hidden ? 'sticky-hidden' : ''}
+        role="complementary"
+        aria-label="Mobile call and enquiry bar"
+        aria-hidden={hidden || undefined}
+      >
+        <a className="sticky-call" href="tel:+917013100492" aria-label="Call Raghava Halo sales team">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+          Call
+        </a>
+        <button className="sticky-price" onClick={() => openModal('sticky-bar')}>
+          Get Price Sheet
         </button>
       </div>
     </>

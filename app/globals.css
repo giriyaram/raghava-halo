@@ -1398,20 +1398,36 @@
   #float-whatsapp:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.5); }
   #float-whatsapp svg { width: 28px; height: 28px; fill: white; }
 
-  #float-cta {
+  /* Sticky mobile call + enquiry bar — <768px only, reuses the same
+     body padding-bottom reserved for the old #float-cta so there's no
+     layout shift when it mounts/unmounts. */
+  #sticky-cta-bar {
     display: none;
     position: fixed; bottom: 0; left: 0; right: 0;
-    background: var(--dark); padding: 14px 20px;
     z-index: 799;
+    background: var(--dark);
+    gap: 10px;
+    padding: 10px 16px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     box-shadow: 0 -4px 20px rgba(28,43,58,0.2);
+    box-sizing: border-box;
+    max-height: 64px;
   }
-  @media (max-width: 899px) { #float-cta { display: block; } }
-  #float-cta button {
-    width: 100%; background: var(--gold); color: var(--white);
-    padding: 14px; font-size: 0.9375rem; font-weight: 700;
-    letter-spacing: 0.06em; text-transform: uppercase;
+  @media (max-width: 767px) { #sticky-cta-bar { display: flex; } }
+  #sticky-cta-bar.sticky-hidden { display: none; }
+  #sticky-cta-bar .sticky-call,
+  #sticky-cta-bar .sticky-price {
+    flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+    height: 44px; font-family: inherit; font-size: 0.8125rem; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase;
     border-radius: var(--radius);
-    font-family: inherit;
+  }
+  #sticky-cta-bar .sticky-call {
+    background: transparent; color: var(--white);
+    border: 1.5px solid rgba(255,255,255,0.35);
+  }
+  #sticky-cta-bar .sticky-price {
+    background: var(--gold); color: var(--white); border: none;
   }
 
   /* ── ANIMATIONS ── */
