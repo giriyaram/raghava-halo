@@ -1,4 +1,9 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
+
+const Lightbox = dynamic(() => import('@/components/Lightbox'), { ssr: false })
 
 const shots = [
   { img: '/renders-towers/clubhouse-front-night.webp', cap: 'Arrival beneath the Halo', span: 'wide', alt: 'Raghava Halo — Club Halo and the illuminated Halo ring at night' },
@@ -12,6 +17,7 @@ const shots = [
 ]
 
 export default function Gallery() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
   return (
     <section id="gallery" aria-labelledby="gallery-h2">
       <div className="container">
@@ -25,13 +31,26 @@ export default function Gallery() {
         </p>
       </div>
       <div className="gallery-grid">
-        {shots.map((s) => (
-          <figure key={s.img + s.cap} className={`gallery-item fade-up ${s.span}`}>
+        {shots.map((s, i) => (
+          <figure
+            key={s.img + s.cap}
+            className={`gallery-item fade-up ${s.span}`}
+            onClick={() => setOpenIndex(i)}
+            style={{ cursor: 'pointer' }}
+          >
             <Image src={s.img} alt={s.alt} fill sizes="(max-width: 700px) 100vw, 45vw" className="gallery-img" />
             <figcaption className="gallery-cap">{s.cap}</figcaption>
           </figure>
         ))}
       </div>
+      {openIndex !== null && (
+        <Lightbox
+          images={shots.map((s) => ({ src: s.img, alt: s.alt }))}
+          index={openIndex}
+          onClose={() => setOpenIndex(null)}
+          onNavigate={setOpenIndex}
+        />
+      )}
     </section>
   )
 }

@@ -15,7 +15,7 @@ const locations = [
 
 export default function Location() {
   const { openModal } = useModal()
-  const listRef = useRef<HTMLDivElement>(null)
+  const listRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
     const el = listRef.current
@@ -106,9 +106,17 @@ export default function Location() {
             </div>
           </a>
 
-          {/* Animated list */}
+          {/* Animated list — the whole strip links out to Google Maps */}
           <nav aria-label="Nearby locations">
-            <div className="location-list" role="list" ref={listRef}>
+            <a
+              className="location-list"
+              role="list"
+              ref={listRef}
+              href="https://maps.app.goo.gl/FDe6iSosozoyFkHZ8"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View all nearby landmarks on Google Maps"
+            >
               {locations.map((loc) => (
                 <div key={loc.place} className="location-item" role="listitem" style={{ '--bar-w': loc.barW } as React.CSSProperties}>
                   <div className="loc-item-inner">
@@ -124,7 +132,7 @@ export default function Location() {
                   </div>
                 </div>
               ))}
-            </div>
+            </a>
           </nav>
         </div>
         <div className="text-center mt-40">

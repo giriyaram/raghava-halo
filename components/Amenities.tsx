@@ -1,4 +1,9 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
+
+const Lightbox = dynamic(() => import('@/components/Lightbox'), { ssr: false })
 
 const features = [
   { img: '/gallery/rooftop-putting-green.webp', name: 'Rooftop Putting Green', note: 'A slow Sunday round, high above the city' },
@@ -23,6 +28,7 @@ const more = [
 ]
 
 export default function Amenities() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
   return (
     <section id="amenities" aria-labelledby="amenities-h2">
       <div className="container">
@@ -38,8 +44,13 @@ export default function Amenities() {
         </div>
 
         <div className="amenity-feature-grid">
-          {features.map((f) => (
-            <figure key={f.name} className="amenity-feature fade-up">
+          {features.map((f, i) => (
+            <figure
+              key={f.name}
+              className="amenity-feature fade-up"
+              onClick={() => setOpenIndex(i)}
+              style={{ cursor: 'pointer' }}
+            >
               <Image
                 src={f.img}
                 alt={`Raghava Halo — ${f.name}`}
@@ -54,6 +65,14 @@ export default function Amenities() {
             </figure>
           ))}
         </div>
+        {openIndex !== null && (
+          <Lightbox
+            images={features.map((f) => ({ src: f.img, alt: `Raghava Halo — ${f.name}` }))}
+            index={openIndex}
+            onClose={() => setOpenIndex(null)}
+            onNavigate={setOpenIndex}
+          />
+        )}
 
         <div className="amenities-more-label">And plenty more within the gates</div>
         <div className="amenities-grid" role="list">
