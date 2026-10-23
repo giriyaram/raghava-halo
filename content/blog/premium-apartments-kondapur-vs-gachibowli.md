@@ -29,7 +29,7 @@ This matters specifically because infrastructure that already exists is a differ
 
 Gachibowli premium residential has historically commanded a premium over Kondapur due to its proximity to Financial District. However, this gap has narrowed as Kondapur has developed.
 
-In 2025, premium 3 BHK apartments in Kondapur in new high-rise launches are available from ₹1.6 Cr. Comparable units in Gachibowli are typically priced 15–25% higher for similar specifications.
+In 2025, premium 3 BHK apartments in Kondapur in new high-rise launches are available from ₹1.8 Cr. Comparable units in Gachibowli are typically priced 15–25% higher for similar specifications.
 
 For buyers who are optimising for value-for-money — wanting a well-planned premium home without paying for address prestige — Kondapur offers a genuine advantage.
 

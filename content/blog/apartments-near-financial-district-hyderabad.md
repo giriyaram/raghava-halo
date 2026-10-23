@@ -29,7 +29,7 @@ Proximity to a major employment hub is one of the strongest drivers of residenti
 - Rental demand from employees relocating to the city creates a floor on vacancy rates
 - NRI buyers specifically seek addresses in this corridor because they understand the employment-driven demand
 
-For a project in Kondapur launching at ₹1.6 Cr for a 3 BHK, the Financial District proximity is a genuine value driver — not a marketing claim.
+For a project in Kondapur launching at ₹1.8 Cr for a 3 BHK, the Financial District proximity is a genuine value driver — not a marketing claim.
 
 ## What to Evaluate Beyond Location
 

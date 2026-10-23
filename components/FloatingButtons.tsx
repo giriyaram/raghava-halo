@@ -19,7 +19,7 @@ export default function FloatingButtons() {
       </a>
       <div id="float-cta" role="complementary" aria-label="Mobile enquiry button">
         <button onClick={openModal} aria-label="Enquire about Raghava Halo — under construction, possession June 2030">
-          Enquire — From ₹1.6 Cr* · Possession 2030
+          Enquire — From ₹1.8 Cr* · Possession 2030
         </button>
       </div>
     </>

@@ -41,7 +41,7 @@ Dual-income tech households in Hyderabad have broadly moved past the "buy the sm
 
 The 3 BHK premium in Kondapur reflects this. Buyers in this market are increasingly looking at 1,800–2,500 sq ft as the sensible range: large enough to live in fully, not so large that maintenance becomes a burden.
 
-At ₹1.6 Cr starting for a thoughtfully planned 3 BHK in a 52-floor high-rise in a fully developed Kondapur location, the value proposition is genuine — particularly when you factor in the infrastructure that's already in place and won't require a 5-year wait.
+At ₹1.8 Cr starting for a thoughtfully planned 3 BHK in a 52-floor high-rise in a fully developed Kondapur location, the value proposition is genuine — particularly when you factor in the infrastructure that's already in place and won't require a 5-year wait.
 
 ## What to Watch Out For
 

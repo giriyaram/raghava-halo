@@ -10,7 +10,7 @@ const stats: StatItem[] = [
   { number: 1000, suffix: '+', label: 'Homes' },
   { raw: '3 Lakh sft', label: 'Community Amenities' },
   { number: 1800, suffix: '–2,500 sft', label: 'Home Sizes' },
-  { raw: '₹1.6 Cr*', label: 'Starting Price' },
+  { raw: '₹1.8 Cr*', label: 'Starting Price' },
   { raw: '3 BHK', label: 'Only Configuration' },
 ]
 

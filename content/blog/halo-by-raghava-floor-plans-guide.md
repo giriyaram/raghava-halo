@@ -16,13 +16,13 @@ All homes at Halo are 3 BHK. There are no 2 BHK or 4 BHK variants. This is a del
 The three size variants are:
 
 **Comfort 3 BHK — ~1,800 sq ft**
-The most efficient configuration. Designed for families who want a well-proportioned 3 BHK without paying for area they don't use. Available in Towers 1 and 2. Priced from ₹1.6 Cr.
+The most efficient configuration. Designed for families who want a well-proportioned 3 BHK without paying for area they don't use. Available in Towers 1 and 2. Priced from ₹1.8 Cr.
 
 **Premium 3 BHK — ~2,100 sq ft**
-The most popular variant. Additional space is used for a larger living area, a more generous master bedroom suite, and expanded balcony dimensions. Available in Towers 1 and 2. Priced from ₹1.9 Cr.
+The most popular variant. Additional space is used for a larger living area, a more generous master bedroom suite, and expanded balcony dimensions. Available in Towers 1 and 2. Priced from ₹2.0 Cr.
 
 **Tower 3 Corner 3 BHK — ~2,500 sq ft**
-Exclusive to Tower 3, where all units are corner apartments. Only 4 homes per floor, each with exposure to three open sides — natural light and cross-ventilation from three directions. The most private and most spacious configuration. Priced from ₹2.3 Cr.
+Exclusive to Tower 3, where all units are corner apartments. Only 4 homes per floor, each with exposure to three open sides — natural light and cross-ventilation from three directions. The most private and most spacious configuration. Priced from ₹2.2 Cr.
 
 ## What Every Floor Plan Includes
 

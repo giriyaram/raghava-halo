@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="hero-meta">
             <div className="hero-meta-item"><strong>3 BHK</strong><span>1,800–2,500 sft</span></div>
             <div className="hero-meta-divider" aria-hidden="true" />
-            <div className="hero-meta-item"><strong>From ₹1.6 Cr*</strong><span>Starting price</span></div>
+            <div className="hero-meta-item"><strong>From ₹1.8 Cr*</strong><span>Starting price</span></div>
             <div className="hero-meta-divider" aria-hidden="true" />
             <div className="hero-meta-item"><strong>5.5 Acres</strong><span>Gated community</span></div>
           </div>
