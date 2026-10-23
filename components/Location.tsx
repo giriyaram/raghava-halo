@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react'
+import { useModal } from '@/lib/modal-context'
 
 const locations = [
   { icon: '🎓', place: 'University of Hyderabad (HCU)', type: 'Green campus & landmark', dist: '5 min', barW: '18%' },
@@ -13,6 +14,7 @@ const locations = [
 ]
 
 export default function Location() {
+  const { openModal } = useModal()
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -124,6 +126,9 @@ export default function Location() {
               ))}
             </div>
           </nav>
+        </div>
+        <div className="text-center mt-40">
+          <button className="btn-dark" onClick={() => openModal('location')}>Book a Site Visit</button>
         </div>
       </div>
     </section>
