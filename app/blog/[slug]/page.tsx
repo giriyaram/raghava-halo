@@ -3,7 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getPost, getAllSlugs } from '@/lib/blog'
 import Nav from '@/components/Nav'
-import Modal from '@/components/Modal'
+import dynamic from 'next/dynamic'
+
+const LeadModal = dynamic(() => import('@/components/LeadModal'), { ssr: false })
 import FloatingButtons from '@/components/FloatingButtons'
 
 interface Props { params: { slug: string } }
@@ -49,7 +51,7 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Nav />
-      <Modal />
+      <LeadModal />
       <header style={{ background: 'var(--dark)', paddingTop: 'calc(var(--nav-h) + 60px)', paddingBottom: '60px' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '20px' }}>

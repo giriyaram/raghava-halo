@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
-import Modal from '@/components/Modal'
+import dynamic from 'next/dynamic'
+
+const LeadModal = dynamic(() => import('@/components/LeadModal'), { ssr: false })
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -138,7 +140,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <Nav />
-      <Modal />
+      <LeadModal />
 
       <header style={{
         background: 'var(--dark)',

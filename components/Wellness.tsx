@@ -75,7 +75,7 @@ export default function Wellness() {
             No membership across town. No traffic on the way to feeling better. Just recovery,
             built into the building you live in.
           </p>
-          <button className="btn-outline" onClick={openModal}>
+          <button className="btn-outline" onClick={() => openModal('wellness')}>
             Tour the Wellness Suite
           </button>
         </div>

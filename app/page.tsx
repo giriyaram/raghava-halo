@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import AnnouncementBar from '@/components/AnnouncementBar'
 import Nav from '@/components/Nav'
 import ScrollAnimations from '@/components/ScrollAnimations'
@@ -22,7 +23,7 @@ import SiteVisit from '@/components/SiteVisit'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import Modal from '@/components/Modal'
+const LeadModal = dynamic(() => import('@/components/LeadModal'), { ssr: false })
 import FloatingButtons from '@/components/FloatingButtons'
 
 export default function HomePage() {
@@ -30,7 +31,7 @@ export default function HomePage() {
     <>
       <AnnouncementBar />
       <Nav />
-      <Modal />
+      <LeadModal />
       <ScrollAnimations />
       <main>
         <Hero />

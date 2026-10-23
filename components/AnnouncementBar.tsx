@@ -53,7 +53,7 @@ export default function AnnouncementBar() {
       </div>
       <button
         className="ann-cta"
-        onClick={openModal}
+        onClick={() => openModal('announcement-cta')}
         aria-label={`${ANNOUNCEMENT.ctaLabel} — enquire about Raghava Halo`}
       >
         {ANNOUNCEMENT.ctaLabel}

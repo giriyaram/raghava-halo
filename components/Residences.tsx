@@ -100,7 +100,7 @@ export default function Residences() {
           ))}
         </div>
         <div className="text-center">
-          <button className="btn-dark" onClick={openModal}>Request Floor Plans &amp; Pricing</button>
+          <button className="btn-dark" onClick={() => openModal('residences')}>Request Floor Plans &amp; Pricing</button>
         </div>
       </div>
     </section>

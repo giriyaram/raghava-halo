@@ -1,35 +1,74 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useModal } from '@/lib/modal-context'
 import PhoneInput from '@/components/PhoneInput'
 
-export default function Modal() {
-  const { open, closeModal } = useModal()
+const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/iKV2RlHEQss3Ai83mwnU/webhook-trigger/Yq3KogRk8uZlWNNpuiV5'
+
+const FOCUSABLE_SELECTOR =
+  'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+
+export default function LeadModal() {
+  const { open, source, closeModal } = useModal()
   const [submitted, setSubmitted] = useState(false)
   const [name, setName] = useState('')
   const router = useRouter()
+  const dialogRef = useRef<HTMLDivElement>(null)
 
+  // Esc closes
   useEffect(() => {
     const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') closeModal() }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
   }, [closeModal])
 
+  // Body scroll lock
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
   }, [open])
 
-  const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/iKV2RlHEQss3Ai83mwnU/webhook-trigger/Yq3KogRk8uZlWNNpuiV5'
+  // Focus trap: focus first field on open, cycle Tab within the dialog, restore focus on close
+  useEffect(() => {
+    if (!open) return
+    const dialogEl = dialogRef.current
+    if (!dialogEl) return
+    const previouslyFocused = document.activeElement as HTMLElement | null
+    const getFocusable = () =>
+      Array.from(dialogEl.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter((el) => el.offsetParent !== null)
+
+    const toFocus = getFocusable()[0] ?? dialogEl
+    toFocus.focus()
+
+    const handleKeydown = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return
+      const items = getFocusable()
+      if (items.length === 0) return
+      const first = items[0]
+      const last = items[items.length - 1]
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault()
+        last.focus()
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault()
+        first.focus()
+      }
+    }
+    dialogEl.addEventListener('keydown', handleKeydown)
+    return () => {
+      dialogEl.removeEventListener('keydown', handleKeydown)
+      previouslyFocused?.focus()
+    }
+  }, [open])
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
     const n = (form.elements.namedItem('name') as HTMLInputElement).value.trim()
     const p = (form.elements.namedItem('phone') as HTMLInputElement).value.trim()
-    const em = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
     const interest = (form.elements.namedItem('interest') as HTMLSelectElement).value
+    const ctaSource = (form.elements.namedItem('cta_source') as HTMLInputElement).value
     const phoneDigits = p.replace(/\D/g, '')
     if (!n || phoneDigits.length < 7) { alert('Please provide your name and phone number.'); return }
     setName(n)
@@ -37,7 +76,7 @@ export default function Modal() {
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: n, phone: p, email: em, interest, source: 'Raghava Halo Website' }),
+      body: JSON.stringify({ name: n, phone: p, interest, source: 'Raghava Halo Website', cta_source: ctaSource }),
     }).catch(() => {})
     setTimeout(() => { closeModal(); router.push('/thank-you') }, 400)
   }
@@ -53,7 +92,7 @@ export default function Modal() {
       aria-labelledby="modal-title"
       onClick={(e) => { if (e.target === e.currentTarget) closeModal() }}
     >
-      <div className="modal-box">
+      <div className="modal-box" ref={dialogRef} tabIndex={-1}>
         <button className="modal-close" onClick={closeModal} aria-label="Close">&times;</button>
         {submitted ? (
           <div style={{ textAlign: 'center', padding: '24px 0' }}>
@@ -67,24 +106,21 @@ export default function Modal() {
           </div>
         ) : (
           <>
-            <h3 id="modal-title">Enquire about Raghava Halo</h3>
-            <p>Floor plans, launch pricing and site-visit slots — all in one conversation.</p>
+            <h3 id="modal-title">Get the EOI Price Sheet</h3>
+            <p>Full pricing, floor plans and site-visit slots — all in one conversation.</p>
             <form onSubmit={handleSubmit} noValidate>
+              <input type="hidden" name="cta_source" value={source} />
               <div className="form-group">
-                <label htmlFor="m-name">Full Name *</label>
-                <input type="text" id="m-name" name="name" placeholder="Your name" required />
+                <label htmlFor="lm-name">Full Name *</label>
+                <input type="text" id="lm-name" name="name" placeholder="Your name" required />
               </div>
               <div className="form-group">
-                <label htmlFor="m-phone">Phone *</label>
-                <PhoneInput id="m-phone" name="phone" required />
+                <label htmlFor="lm-phone">Phone *</label>
+                <PhoneInput id="lm-phone" name="phone" required />
               </div>
               <div className="form-group">
-                <label htmlFor="m-email">Email Address</label>
-                <input type="email" id="m-email" name="email" placeholder="you@email.com" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="m-interest">I&apos;m interested in</label>
-                <select id="m-interest" name="interest">
+                <label htmlFor="lm-interest">I&apos;m interested in</label>
+                <select id="lm-interest" name="interest">
                   <option value="">Select a residence</option>
                   <option>The Essential — 3 BHK (~1,830 sft)</option>
                   <option>The Signature — 3 BHK (~2,275 sft)</option>

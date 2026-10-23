@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 import Nav from '@/components/Nav'
-import Modal from '@/components/Modal'
+import dynamic from 'next/dynamic'
+
+const LeadModal = dynamic(() => import('@/components/LeadModal'), { ssr: false })
 import FloatingButtons from '@/components/FloatingButtons'
 
 export const metadata: Metadata = {
@@ -18,7 +20,7 @@ export default function BlogPage() {
   return (
     <>
       <Nav />
-      <Modal />
+      <LeadModal />
       <header style={{ background: 'var(--dark)', paddingTop: 'calc(var(--nav-h) + 60px)', paddingBottom: '60px' }}>
         <div className="container">
           <div className="section-label" style={{ color: 'var(--stone)' }}>Insights</div>

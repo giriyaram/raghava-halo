@@ -25,7 +25,7 @@ export default function Positioning() {
               after the launch-day shine has faded.
             </p>
             <div style={{ marginTop: '36px', display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-              <button className="btn-dark" onClick={openModal}>Request the Brochure</button>
+              <button className="btn-dark" onClick={() => openModal('positioning')}>Request the Brochure</button>
               <a href="#residences" className="btn-ghost">See the Residences</a>
             </div>
           </div>

@@ -38,7 +38,7 @@ export default function Architecture() {
             <button
               className="btn-primary"
               style={{ background: 'var(--stone)', color: 'var(--dark)' }}
-              onClick={openModal}
+              onClick={() => openModal('architecture')}
             >
               Request the Design Brochure
             </button>

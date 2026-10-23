@@ -57,7 +57,7 @@ export default function FloorPlans() {
               </div>
               <div className="fp-lock-title">{t.label} floor plan</div>
               <div className="fp-lock-sub">Get the full, dimensioned plate for {t.range} 3 BHK homes.</div>
-              <button className="btn-dark" onClick={openModal}>Unlock the Floor Plan</button>
+              <button className="btn-dark" onClick={() => openModal(`floorplan-tower-${active + 1}`)}>Unlock the Floor Plan</button>
             </div>
           </div>
           <div className="fp-detail">
@@ -71,7 +71,7 @@ export default function FloorPlans() {
               <li>Utility &amp; store off the kitchen</li>
               <li>Vastu-aligned orientation</li>
             </ul>
-            <button className="btn-dark" onClick={openModal}>Get the Dimensioned Plan</button>
+            <button className="btn-dark" onClick={() => openModal(`floorplan-tower-${active + 1}`)}>Get the Dimensioned Plan</button>
           </div>
         </div>
       </div>

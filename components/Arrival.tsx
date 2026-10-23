@@ -32,7 +32,7 @@ export default function Arrival() {
             <div className="arrival-stat"><strong>5.5 acres</strong><span>Landscaped community</span></div>
             <div className="arrival-stat"><strong>Grand</strong><span>Drop-off &amp; forecourt</span></div>
           </div>
-          <button className="btn-primary" onClick={openModal}>Book a Clubhouse Walkthrough</button>
+          <button className="btn-primary" onClick={() => openModal('arrival')}>Book a Clubhouse Walkthrough</button>
         </div>
       </div>
     </section>

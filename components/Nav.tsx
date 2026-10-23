@@ -32,7 +32,7 @@ export default function Nav() {
             <li><a href="#location">Location</a></li>
             <li><Link href="/blog">Journal</Link></li>
           </ul>
-          <button className="nav-cta" onClick={openModal} aria-label="Book a site visit at Raghava Halo">
+          <button className="nav-cta" onClick={() => openModal('nav-desktop')} aria-label="Book a site visit at Raghava Halo">
             Book a Site Visit
           </button>
           <button
@@ -58,7 +58,7 @@ export default function Nav() {
           <li><Link href="/blog" onClick={closeMenu}>Journal</Link></li>
           <li><a href="#faq" onClick={closeMenu}>FAQ</a></li>
         </ul>
-        <button className="mobile-cta" onClick={() => { closeMenu(); openModal() }}>
+        <button className="mobile-cta" onClick={() => { closeMenu(); openModal('nav-mobile') }}>
           Book a Site Visit
         </button>
       </div>

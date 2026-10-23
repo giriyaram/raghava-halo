@@ -26,7 +26,7 @@ export default function Contact() {
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, phone, email, interest, source: 'Raghava Halo Website' }),
+      body: JSON.stringify({ name, phone, email, interest, source: 'Raghava Halo Website', cta_source: 'contact-form' }),
     }).catch(() => {})
     setTimeout(() => router.push('/thank-you'), 400)
   }

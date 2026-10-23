@@ -74,7 +74,7 @@ export default function KidsLab() {
             The kind of environment parents usually drive across the city for — a few floors below,
             inside the community they already call home.
           </p>
-          <button className="btn-dark" onClick={openModal}>Book a Site Visit</button>
+          <button className="btn-dark" onClick={() => openModal('kids-lab')}>Book a Site Visit</button>
         </div>
       </div>
     </section>

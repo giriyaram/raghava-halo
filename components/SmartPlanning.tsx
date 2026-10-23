@@ -110,7 +110,7 @@ export default function SmartPlanning() {
             On the brochure, every premium project looks the same. What changes at Raghava Halo is
             how much of it is genuinely, measurably yours.
           </p>
-          <button className="btn-dark" onClick={openModal}>See the Floor Plans</button>
+          <button className="btn-dark" onClick={() => openModal('smart-planning')}>See the Floor Plans</button>
         </div>
 
       </div>
