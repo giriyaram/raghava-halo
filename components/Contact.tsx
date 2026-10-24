@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useModal } from '@/lib/modal-context'
 import PhoneInput from '@/components/PhoneInput'
+import { trackLeadSubmit } from '@/lib/track'
 
 export default function Contact() {
   const { openModal } = useModal()
@@ -28,6 +29,7 @@ export default function Contact() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, phone, email, interest, source: 'Raghava Halo Website', cta_source: 'contact-form' }),
     }).catch(() => {})
+    trackLeadSubmit('contact-form')
     setTimeout(() => router.push('/thank-you'), 400)
   }
 

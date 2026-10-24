@@ -3,8 +3,8 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
-// Metadata can't be exported from a 'use client' component,
-// so we set it via a separate metadata export pattern — handled below via head tags
+// Metadata (noindex,nofollow) can't be exported from this 'use client'
+// component — it's set in the sibling app/thank-you/layout.tsx instead.
 
 const WA = 'https://wa.me/917013100492?text=Hi%2C+I+just+enquired+about+Raghava+Halo+in+Kondapur.+Looking+forward+to+learning+more.'
 
@@ -446,7 +446,8 @@ Raghava Halo · RERA Approved · Kondapur
         <footer className="ty-footer">
           <div className="ty-footer-brand">Raghava <span>Halo</span></div>
           <div className="ty-footer-links">
-            <Link href="/">Back to Homepage</Link>
+            <a href="tel:+917013100492">+91 70131 00492</a>
+            <Link href="/">Back to Raghava Halo</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>
           </div>
         </footer>

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useModal } from '@/lib/modal-context'
 import PhoneInput from '@/components/PhoneInput'
+import { trackLeadSubmit } from '@/lib/track'
 
 const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/iKV2RlHEQss3Ai83mwnU/webhook-trigger/Yq3KogRk8uZlWNNpuiV5'
 
@@ -78,6 +79,7 @@ export default function LeadModal() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: n, phone: p, interest, source: 'Raghava Halo Website', cta_source: ctaSource }),
     }).catch(() => {})
+    trackLeadSubmit(ctaSource)
     setTimeout(() => { closeModal(); router.push('/thank-you') }, 400)
   }
 
