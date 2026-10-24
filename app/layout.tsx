@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: '%s | Raghava Halo, Kondapur',
   },
   description:
-    'Raghava Halo is a RERA-approved 3-tower, 52-floor high-rise in Kondapur, Hyderabad, near HCU. Thoughtfully planned 3 BHK homes of 1,800–2,500 sft from ₹1.8 Cr, with lower loading, larger balconies and over 3 lakh sft of community amenities. Book a site visit.',
+    '3 BHK homes from ₹1.8 Cr near HCU, Kondapur. RERA approved, 1,830–2,455 sft. Get the EOI price sheet and floor plans today.',
   keywords: [
     'Raghava Halo',
     'Raghava Halo Kondapur',
